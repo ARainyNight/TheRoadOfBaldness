@@ -1,8 +1,12 @@
 [TOC]
 
----
 
-### MySQL数据库基本操作
+
+
+
+-----------------
+
+## MySQL数据库基本操作
 
 #### 登录
 
@@ -36,7 +40,7 @@
 
 ---
 
-### 常用SQL语句
+## 常用SQL语句
 
 + `SELECT USER()`：得到登录的用户
 + `SELECT VERSION()`：得到Mysql的版本信息
@@ -46,7 +50,7 @@
 
 ----
 
-### SQL语句语法规范
+## SQL语句语法规范
 
 + 常用的MySQL的关键字我们需要大写，库名、表名、字段名称等使用小写
 + SQL语句支持折行操作，拆分的时候不能把完整单词拆开
@@ -57,7 +61,7 @@
 
 ---
 
-### 数据库相关操作
+## 数据库相关操作
 
 #### 创建数据库
 
@@ -94,6 +98,69 @@
 `DROP DATABASE db_name;`
 
 如果数据库存在则删除`DROP DATABASE [IF EXISTS] db_name;`
+
+-----------
+
+##数据表相关操作
+
+####数据表
+
++ 数据表是数据库最重要的组成部分之一，数据是保存在数据表中
++ 数据表由行(`row`)和列(`col`)来组成
++ 每个数据表中至少有一列，行可以有零行一行或者多行
++ 表名要求唯一，不要包含特殊字符，取名要有意义
+
+#### 创建数据表
+
+```sql
+CREATE TABLE[IF NOT EXISTS] tbl_name(
+	字段名称 字段类型[完整约束条件]
+	字段名称 字段类型[完整约束条件]
+	.....
+)ENGINE=存储引擎  CHARSET=编码方式;
+```
+
+#### 查看当前数据库下已有数据表
+
+`SHOW TABLES ;`
+
+`SHOW [FULL] TABLES[{FROM|IN}db_name][LIKE 'pattern'|WHERE expr];`
+
+#### 查看指定数据表的详细信息
+
+`SHOW CREATE TABLE tbl_name;`
+
+#### 查看表结构
+
+`DESC tbl_name;`
+
+`DESCRIBE tbl_name; `
+
+`SHOW COLUMNS FROM tbl_name;`
+
+#### 删除指定的数据表
+
+`DROP TABLE[IF EXISTS] tbl_name;`
+
+---
+
+## MySQL中的数据类型
+
+[Mysql的数据类型](https://www.cnblogs.com/-xlp/p/8617760.html)
+
+#### 数值型
+
++ 整数型
++ 浮点型
++ 定点型
+
+#### 字符串类型
+
+#### 日期时间类型
+
+
+
+
 
 
 
