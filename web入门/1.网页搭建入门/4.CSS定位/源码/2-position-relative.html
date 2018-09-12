@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			.block{
+				position: relative;
+				top: 0px;
+				left: 0px;
+				width: 80px;
+				height: 80px;
+				line-height: 80px;
+				border: 2px solid black;
+				text-align: center;
+				float: left;
+				z-index: 9;
+			}
+			.block:nth-child(2){
+				position: relative;
+				top: 0px;
+				left: -84px;
+				border-color: red;
+				z-index:10;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block">A</div>
+		<div class="block">B</div>
+		<div class="block">C</div>
+	</body>
+</html>

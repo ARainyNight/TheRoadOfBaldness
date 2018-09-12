@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>伪元素</title>
+		<style type="text/css">
+			q::before{
+				content: "<<";
+				color: lightgreen;
+			}
+			q::after{
+				content: ">>";
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<q>一些引用</q>，他说，<q>比没有好。</q>
+	</body>
+</html>

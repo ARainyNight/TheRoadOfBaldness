@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="">
+			<!--type:输入类型  value:默认文本  maxlength：规定字符长度-->
+			<!--文本-->
+			<input type="text" name="" id="" value="我是一段文本" maxlength="10"/>
+			<br />
+			<!--密码-->
+			<input type="password" value="我是密码" />
+			<br />
+			<!--单选-->
+			<!--同一组要单选必须给name指一样-->
+			<input name="sex"  type="radio" value="0" />男
+			<input name="sex" type="radio" value="1" />女
+			<br />
+			<!--多选-->
+			<!--默认选中checked-->
+			<input type="checkbox" checked value="0"/>电影
+			<input type="checkbox" value="1"/>音乐
+			<input type="checkbox" value="2"/>体育
+			<input type="checkbox" value="3"/>游戏
+			<br />
+			<!--按钮-->
+			<input type="button" value="我是按钮"/>
+			<br />
+			<!--数字-->
+			<input type="number" />
+			<br />
+			<!--日期-->
+			<input type="date" />
+			<!--颜色-->
+			<input type="color" />
+			<br />
+			<!--范围-->
+			<input type="range" min="1"  max="5"/>
+			<br />
+			<!--邮件-->
+			<input type="email" />
+			<br />
+			<input type="submit" name="" id="" value="提交" />
+			<br />
+			<!--URL-->
+			<input type="url" />
+			<br />
+			<!--文件-->
+			<!--multiple可以实现同时上传多个文件-->
+			<input type="file"  multiple="multiple" />
+			<br />
+			<!--下拉列表-->
+			<select >
+				<option value ="">苹果</option>
+				<option value ="" selected="">水蜜桃</option>
+				<option value ="">樱桃</option>
+			</select>
+			<br>
+			<style>
+				textarea{
+					resize: none; 
+				}
+			</style>
+			<!--文本域-->
+			<textarea rows="3" cols="10"></textarea>
+		</form>
+	</body>
+</html>

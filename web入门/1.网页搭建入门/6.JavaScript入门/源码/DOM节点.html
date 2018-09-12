@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+			<div id="div1">
+				<p id="p1">我是第一个P</p>
+				<p id="p2">我是第二个P</p>
+			</div>
+			
+			<script type="text/javascript">
+				var p  = document.createElement("p");//新增<p></p>
+				var word =document.createTextNode("我是新增的P标签");  //我是新增的P标签
+				
+				p.appendChild(word);  // <p>我是新增的P标签</p>
+				
+				var div =document.getElementById("div1");
+				div.appendChild(p);              //<p>我是新增的P标签</p> 放到div下
+				
+				var p1 =document.getElementById("p1");
+				div.removeChild(p1);              //删除p1
+			</script>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+	<div id="intro">helloworld</div>
+
+	<div id="main">
+		<p>The DOM is very useful</p>
+	</div>
+	
+	<div class="content">1</div>
+	<div class="content">2</div>
+	<div class="content">3</div>
+	<div class="content">4</div>
+
+	<script type="text/javascript">
+		var intro = document.getElementById("intro"); //通过id找html,唯一的
+
+		var main = document.getElementById("main");
+		var p = main.getElementsByTagName("p")[0]; //通过属性名找到htnml,不是唯一的一个P标签,是整个main里面的p标签
+		
+		var content = document.getElementsByClassName("content")[0];
+	</script>
+</body>
+
+</html>

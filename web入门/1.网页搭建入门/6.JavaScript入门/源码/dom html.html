@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+			<div id="main" data="nihao">123</div>
+			<img src="1.jpg" id="img" />
+			
+			<a id="goUrl" href="">调到百度</a>
+			
+			<script type="text/javascript">
+				var main= document.getElementById("main");
+				
+				
+				
+				main.innerHTML = "helloworld";
+				//获取data属性的值
+				alert(main.getAttribute("data"));
+				
+				/**
+				 * 1.判断是否有data值
+				 * 2.有data值修改data值为buhao
+				 * 3.如果没有这个属性则会添加这个属性
+				 */
+				main.setAttribute("data","buhao");
+				main.setAttribute("dd","dasd");
+				document.write(main.getAttribute("data"));
+				document.write(main.getAttribute("dd"));
+				
+				
+				var img =document.getElementById("img");
+				img.src="2.jpg";
+				
+				var goUrl=document.getElementById("goUrl");
+				goUrl.href="www.baidu.com"
+			</script>
+	</body>
+</html>

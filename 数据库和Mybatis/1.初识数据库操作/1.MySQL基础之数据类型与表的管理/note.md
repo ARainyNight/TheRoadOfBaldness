@@ -1,0 +1,99 @@
+[TOC]
+
+---
+
+### MySQL数据库基本操作
+
+#### 登录
+
+`mysql -uroot -p`
+
+#### 退出
+
+`exit`
+
+`quit`
+
+`\q`
+
+#### 得到版本
+
+`mysql -V`  或者  `mysql --version`
+
+####登录同时打开指定数据库
+
+`mysql -uroot -p -D db_name`
+
+#### 命令行结束符
+
+默认使用`;`或者`\g`来结束
+
+#### 查看命令行手册
+
+`help create database `
+
+可以通过`help`
+
+---
+
+### 常用SQL语句
+
++ `SELECT USER()`：得到登录的用户
++ `SELECT VERSION()`：得到Mysql的版本信息
++ `SELECT NOW()`：得到当前的日期时间
++ `SELECT DATABASE()`：得到当前打开的数据库
++ `SHOW WARNINGS;`:查看上一步操作产生的警告信息
+
+----
+
+### SQL语句语法规范
+
++ 常用的MySQL的关键字我们需要大写，库名、表名、字段名称等使用小写
++ SQL语句支持折行操作，拆分的时候不能把完整单词拆开
++ 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号``将其扩起来
++ mysql中的注释
+  - `#注释内容`
+  - `--注释内容`
+
+---
+
+### 数据库相关操作
+
+#### 创建数据库
+
+`CREATE DATABASE db_name`或者`CREATE SCHEMA db_name`
+
+检测数据库名称是否存在，不存在则创建 `CREATE DATABASE [IF NOT EXISTS] db_name;`
+
+在创建数据库的同时制定编码方式`CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET[=]charset;`
+
+注意：数据库名称最好取的有意义，名称不要包括特殊字符或者是MySQL关键字
+
+#### 查看已有数据库
+
+`show databases;`
+
+#### 查看指定数据库的详细信息
+
+`SHOW CREATE DATABASE db_name;`
+
+#### 修改指定数据库的编码方式
+
+`ALTER DATABASE db_name[DEFAULT]CHARACTER SET[=]charset;`
+
+#### 打开指定数据库
+
+`USE db_name;`
+
+#### 得到当前打开的数据库
+
+`SELECT DATABASE()|SCHEMA();`
+
+#### 删除指定的数据库
+
+`DROP DATABASE db_name;`
+
+如果数据库存在则删除`DROP DATABASE [IF EXISTS] db_name;`
+
+
+

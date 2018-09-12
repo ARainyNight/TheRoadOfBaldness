@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<style type="text/css">
+			.clear{
+				/* clear: both;  方法一 */
+			}
+			.container{
+				width: 500px;
+				/* height: 500px; */
+				border: 2px solid #333;
+				/*overflow: hidden;   方法二*/
+				zoom: 1;
+			}
+			.clearfix:after{
+				content: '.';
+				height: 0;
+				display: block;
+				visibility: hidden;
+				clear: both;         /*方法三*/
+			}
+			.clearfix{
+				zoom:1;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: blue;
+				color: #fff;
+				/* float: left;
+				clear: none; */
+				/* float: right; */
+				/* clear: right; */
+				/* clear: both; */
+				float: left;
+			}
+			.box2{
+				width: 100px;
+				height: 100px;
+				background: red;
+				color: #fff;
+				/* float: left;
+				clear: left; */
+				/* float: right; */
+				/* clear: right; */
+				/* clear: both; */
+				float: left;
+			}
+			.box3{
+				width: 100px;
+				height: 100px;
+				background: orange;
+				color: #fff;
+				/* float: left;
+				clear: left; */
+				/* float: right; */
+				/* clear: right; */
+				/* clear: both; */
+				float: left;
+				
+			}
+			.box4{
+				width: 500px;
+				height: 200px;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="container clearfix">
+		<div class="box1">11111</div>
+		<div class="box2">22222</div>
+		<div class="box3">33333</div>
+		<div class="clear"></div>
+	</div>	
+	<div class="box4">44444</div>
+	</body>
+</html>
