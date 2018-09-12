@@ -109,6 +109,15 @@
 + 数据表由行(`row`)和列(`col`)来组成
 + 每个数据表中至少有一列，行可以有零行一行或者多行
 + 表名要求唯一，不要包含特殊字符，取名要有意义
++ 完整性约束条件
+  - `unsigned`:无符号，没有负数，从0开始
+  - `zerofill`:零填充，当显示长度不够的时候可以使用前补0的效果填充至指定长度
+  - `NOT NULL`:非空约束，也就是插入值的时候这个字段必须要给值
+  - `DEFAULT`:默认值，如果插入记录的时候没有给字段赋值，则使用默认值
+  - `PRIMARY KEY`:主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
+  - `UNIQUE KEY`:唯一性 ，一个表中可以有多个字段是唯一索引，同样的值不能重复，null除外
+  - `AUTO_INCREMENT`:自动增长，只能用于数值列，而且配合索引所有
+  - `FOREIGN KEY`:外键约束
 
 #### 创建数据表
 
@@ -141,6 +150,14 @@ CREATE TABLE[IF NOT EXISTS] tbl_name(
 #### 删除指定的数据表
 
 `DROP TABLE[IF EXISTS] tbl_name;`
+
+#### 插入一条记录
+
+`INSERT [INTO] tbl_name(id,username,....) VALUES(1,"KING",.....);`
+
+#### 查询表中所有记录
+
+`select * from tbl_name;`
 
 ---
 
