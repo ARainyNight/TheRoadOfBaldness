@@ -55,4 +55,16 @@ public class User {
     public void setPath(String path) {
         this.path = path;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", sex='" + sex + '\'' +
+                ", hobby='" + hobby + '\'' +
+                ", path='" + path + '\'' +
+                '}';
+    }
 }

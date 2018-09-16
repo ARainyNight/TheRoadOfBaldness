@@ -18,25 +18,25 @@
 		</div>
 		<%
 			String username="";
-			// 获得从客户端携带过来的所有的Cookie
-			Cookie[] cookies = request.getCookies();
-			// 从Cookie的数组中查找指定名称的Cookie
-			Cookie cookie = CookieUtils.findCookie(cookies, "username");
-			if(cookie != null){
-				username = cookie.getValue();
-			}
-			
+//			// 获得从客户端携带过来的所有的Cookie
+//			Cookie[] cookies = request.getCookies();
+//			// 从Cookie的数组中查找指定名称的Cookie
+//			Cookie cookie = CookieUtils.findCookie(cookies, "username");
+//			if(cookie != null){
+//				username = cookie.getValue();
+//			}
+
 			if(session.getAttribute("username")!=null){
 				username = (String)session.getAttribute("username");
 			}
-			
-			String msg = "";
-			if(request.getAttribute("msg")!=null){
-				msg = (String)request.getAttribute("msg");
-			}
-			
+
+//				String msg = "";
+//			if(request.getAttribute("msg")!=null){
+//				msg = (String)request.getAttribute("msg");
+//			}
+
 		%>
-		<h3><font color="red"><%=msg %></font></h3>
+		<%--<h3><font color="red"><%=msg %></font></h3>--%>
 		<form action="/reg_login/LoginServlet" method="post">
 			<table>
 				<tr>

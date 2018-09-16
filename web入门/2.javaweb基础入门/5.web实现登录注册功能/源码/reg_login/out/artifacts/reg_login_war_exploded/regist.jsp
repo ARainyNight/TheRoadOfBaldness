@@ -29,8 +29,7 @@
             msg = (String) request.getAttribute("msg");
         }
     %>
-    <h3><font color="red"><%= msg %>
-    </font></h3>
+    <h3><font color="red"><%=msg %></font></h3>
     <form action="<%=basePath%>RegistServlet" method="post" enctype="multipart/form-data">
         <table>
             <tr>
