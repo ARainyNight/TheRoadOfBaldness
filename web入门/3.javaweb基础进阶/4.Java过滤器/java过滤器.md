@@ -60,5 +60,5 @@
 + 若通过request.forward()方式时，过滤器会认为是FORWARD方式。
 + 若目标资源通过声明时异常处理机制调用的，过滤器会认为是ERROR方式
 
-   具体看(FilterDemo2)[]
+   具体看(FilterDemo2)[https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/web%E5%85%A5%E9%97%A8/3.javaweb%E5%9F%BA%E7%A1%80%E8%BF%9B%E9%98%B6/4.Java%E8%BF%87%E6%BB%A4%E5%99%A8/%E6%BA%90%E7%A0%81/FilterDemo2]
 
