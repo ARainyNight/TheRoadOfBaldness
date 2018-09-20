@@ -6,10 +6,19 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String flag = request.getParameter("flag");
+%>
 <html>
 <head>
     <title>系统登录</title>
     <link href="form.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        var  flag = <%=flag%>;
+        if ('1' ==flag){
+            alert("请登录系统!");
+        }
+    </script>
 </head>
 <body>
 <form action="login.jsp" method="post" class="smart-green">
