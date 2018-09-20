@@ -49,4 +49,16 @@
 
 + 过滤器的调用顺序取决于过滤器在web.xml文件中的**注册顺序**
 
-  
+
+
+
+#### filter-mapping子元素dispatcher
+
++ 当过滤器发现被访问映射资源时，需要强调资源被调用方式。
++ 当用户直接访问页面时，过滤器会认为是直接请求REQUEST方式。
++ 若通过INCLUDE方式时，过滤器会认为是INCLUDE方式。
++ 若通过request.forward()方式时，过滤器会认为是FORWARD方式。
++ 若目标资源通过声明时异常处理机制调用的，过滤器会认为是ERROR方式
+
+   具体看(FilterDemo2)[]
+
