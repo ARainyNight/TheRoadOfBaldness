@@ -16,17 +16,25 @@
         <!--<listener-class>listener.MySecondListener</listener-class>-->
     <!--</listener>-->
 
-    <context-param>
-        <param-name>app_name</param-name>
-        <param-value>Listener Web</param-value>
-    </context-param>
+    <!--<context-param>-->
+        <!--<param-name>app_name</param-name>-->
+        <!--<param-value>Listener Web</param-value>-->
+    <!--</context-param>-->
 
-    <context-param>
-        <param-name>version</param-name>
-        <param-value>1.0</param-value>
-    </context-param>
-    
+    <!--<context-param>-->
+        <!--<param-name>version</param-name>-->
+        <!--<param-value>1.0</param-value>-->
+    <!--</context-param>-->
+    <!---->
+    <!--<listener>-->
+        <!--<listener-class>listener.MyServletContextListener</listener-class>-->
+    <!--</listener>-->
+
     <listener>
-        <listener-class>listener.MyServletContextListener</listener-class>
+        <listener-class>listener.MyHttpSessionListener</listener-class>
     </listener>
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
 </web-app>
