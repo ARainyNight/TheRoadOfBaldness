@@ -30,11 +30,15 @@
         <!--<listener-class>listener.MyServletContextListener</listener-class>-->
     <!--</listener>-->
 
-    <listener>
-        <listener-class>listener.MyHttpSessionListener</listener-class>
-    </listener>
+    <!--<listener>-->
+        <!--<listener-class>listener.MyHttpSessionListener</listener-class>-->
+    <!--</listener>-->
 
-    <session-config>
-        <session-timeout>1</session-timeout>
-    </session-config>
+    <!--<session-config>-->
+        <!--<session-timeout>1</session-timeout>-->
+    <!--</session-config>-->
+    
+    <listener>
+        <listener-class>listener.MyServletRequestListener</listener-class>
+    </listener>
 </web-app>

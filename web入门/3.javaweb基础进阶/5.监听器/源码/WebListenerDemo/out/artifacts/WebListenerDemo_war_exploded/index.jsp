@@ -8,9 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>监听器Demo</title>
   </head>
   <body>
-  $END$
+    <span>ServletRequestListener测试</span>
+  <a href="servlet_request.jsp?par=request_par"target="_blank">初始化</a>
   </body>
 </html>
