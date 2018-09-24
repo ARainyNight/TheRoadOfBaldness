@@ -173,6 +173,20 @@ CREATE TABLE[IF NOT EXISTS] tbl_name(
 
 #### 字符串类型
 
++ CHAR(M):M个字节
+
++ VERCHAR(M):l+1个字节,其中l<=M且0<=M<=65535
+
++ CHAR效率高于VARCHAR,CHAR相当于拿空间换时间，VARCHAR拿时间换空间
+
++ CHAR默认进行存储数据的时候，后面会用空格填充到指定长度，而在检索的时候会去掉后面空格
+
++ VARCHAR在保存的时候不进行填充，尾部的空格会留下
+
++ TEXT列不能有默认值,检索的时候不存在大小写转换
+
+  
+
 #### 日期时间类型
 
 
