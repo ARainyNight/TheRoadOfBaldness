@@ -11,6 +11,7 @@
 String flag = request.getParameter("flag");
 %>
 <html>
+
   <head>
     <link href="form.css" rel="stylesheet" type="text/css" />
     <title>Login</title>
