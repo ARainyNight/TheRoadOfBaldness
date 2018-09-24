@@ -13,5 +13,6 @@
   <body>
     <span>ServletRequestListener测试</span>
   <a href="servlet_request.jsp?par=request_par"target="_blank">初始化</a>
+    <a href="attribute_init.jsp"target="_blank">初始化</a>
   </body>
 </html>

@@ -38,7 +38,11 @@
         <!--<session-timeout>1</session-timeout>-->
     <!--</session-config>-->
     
+    <!--<listener>-->
+        <!--<listener-class>listener.MyServletRequestListener</listener-class>-->
+    <!--</listener>-->
+    
     <listener>
-        <listener-class>listener.MyServletRequestListener</listener-class>
+        <listener-class>listener.MyServletContextAttributeLinsteren</listener-class>
     </listener>
 </web-app>
