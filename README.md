@@ -35,3 +35,16 @@
 
 + 初识数据库
   - [MySQL基础之数据类型与表的管理](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/1.MySQL%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%A1%A8%E7%9A%84%E7%AE%A1%E7%90%86)
+
+
+
+-------
+
+### 项目案例
+
++ [Java监听器项目案例]()
+  - 案例说明
+    - 通过过滤器实现登录控制，未登录用户不能访问系统首页
+    - 用户登录，将登录名存储到session里
+    - 登录监听器监听session属性中登录值属性变化
+    - 若登录用户用户名已登录系统，清除前次登录信息
