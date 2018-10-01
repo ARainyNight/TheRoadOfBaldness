@@ -111,12 +111,36 @@
 + 表名要求唯一，不要包含特殊字符，取名要有意义
 + 完整性约束条件
   - `unsigned`:无符号，没有负数，从0开始
+
   - `zerofill`:零填充，当显示长度不够的时候可以使用前补0的效果填充至指定长度
+
   - `NOT NULL`:非空约束，也就是插入值的时候这个字段必须要给值
+
   - `DEFAULT`:默认值，如果插入记录的时候没有给字段赋值，则使用默认值
+
   - `PRIMARY KEY`:主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
+
+    - 复合主键
+
+    - ```sql
+      CREATE TABLE table_name(
+      	id INT UNSIGNED,
+          courseId INT UNSIGNED,
+          username VARCHAR(20),
+          email VARCHAR(50),
+          PRIMARY KEY(id ,courseId)
+      );
+      
+      INSERT table_name(id,courseId,username,email)
+      VALUES(1,1,'king','939744682@qq.com');
+      ```
+
+    - 复合主键赋值时必须同时相同才代表数据重复，通过两个复合主键都可以定义到同一条元素
+
   - `UNIQUE KEY`:唯一性 ，一个表中可以有多个字段是唯一索引，同样的值不能重复，null除外
-  - `AUTO_INCREMENT`:自动增长，只能用于数值列，而且配合索引所有
+
+  - `AUTO_INCREMENT`:自动增长，只能用于数值列，而且配合索引所有，默认起始值1开始，每次增长1，已有编号的最大值加1
+
   - `FOREIGN KEY`:外键约束
 
 #### 创建数据表
@@ -159,6 +183,88 @@ CREATE TABLE[IF NOT EXISTS] tbl_name(
 
 `select * from tbl_name;`
 
+#### 表结构相关操作
+
++ 添加字段
+
+  - ```sql
+    alter table tbl_name
+    add 字段名称 字段属性[完整性约束条件][FIRST|AFTER 字段名称];
+    ```
+
++ 删除字段
+
+  - ```sql
+    alter table tble_name
+    drop 字段名称;
+    ```
+
++ 添加默认值
+
+  - ```sql
+    alter table tbl_name
+    alter 字段名称 set default 默认值;
+    ```
+
++ 删除默认值
+
+  - ```sql
+    alter table tbl_name
+    alter 字段名称 drop default ;
+    ```
+
++ 修改字段类型、字段属性
+
+  - ```sql
+    alter table tbl_name
+    modify 字段名称 字段类型[字段属性][first|after 字段名称];
+    ```
+
++ 修改字段名称、字段类型、字段属性
+
+  - ```sql
+    alter table tbl_name
+    change 原字段名称 新字段名称 字段类型 字段属性[first|after 字段名称];
+    ```
+
++ 添加主键
+
+  - ```sql
+    alter table tbl_name
+    add primary key(字段名称);
+    ```
+
++ 删除主键
+
+  - ```sql 
+    alter table tbl_name
+    drop primary key;
+    ```
+
++ 添加唯一
+
+  - ```sql
+    alter table tbl_name
+    add unique key|index index_name (字段名称);
+    ```
+
++ 删除唯一
+
+  - ```sql
+    alter table tbl_name
+    drop index_name;
+    ```
+
++ 修改数据表名称
+
+  - ```sql
+    alter table tbl_name
+    rename [to|as] new_tbl_name;
+    ```
+
+  - ```sql
+    rename table tbl_name to new_tbl_name;
+    ```
 ---
 
 ## MySQL中的数据类型
@@ -188,6 +294,54 @@ CREATE TABLE[IF NOT EXISTS] tbl_name(
   
 
 #### 日期时间类型
+
++ Time：3个字节
++ DATE:3个字节
++ DATETIME:8个字节
++ TIMESTAMP:4个字节
++ YEAR:1个字节
+
+-----
+
+## MYSQL存储引擎
+
+#### MyISAM存储引擎
+
++ 默认MyISAM的表会在磁盘中产生3个文件
+
+  - `.frm`：表结构文件
+  - `.MYD`：数据文件
+  - `.MYI`：索引文件
+
++ 可以在创建表的时候指定数据文件和索引文件的存储位置，只有MyISAM表支持
+
+  - ```sql
+    DATA DIRECORY [=] 数据保存的绝对路径
+    ```
+
+  - ```sql
+    INDEX DIRECTORY [=] 索引文件保存的绝对路径
+    ```
+
++ MyISAM单表最大支持的数据量 2的64次方条记录
+
++ 每个表最多可以建立64个索引
+
++ 如果是复合索引，每个复合索引最多包含16个，索引值最大长度是1000B
+
++ MyISAM引擎的存储格式
+
+  - 定长(FIXED 静态)
+  - 动态(DYNAMIC)
+  - 压缩(COMPRESSED)
+
+#### Inodb存储引擎
+
+
+
+
+
+
 
 
 
