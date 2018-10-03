@@ -146,9 +146,6 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
                       System.out.println("插入成功");
                   }
      ```
-    ```
-  
-    ```
 
 + 修改数据库中的记录
 
@@ -159,9 +156,6 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
                       System.out.println("修改成功");
                   }
        ```
-    ```
-  
-    ```
 
 + 删除数据库中的记录
 
@@ -182,8 +176,8 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
 ### JDBC的工具类的抽取
 
 + 为了简化JDBC的开发，可以将一些重复的代码进行抽取
-  - [JDBCUtils]()
-  - [jdbc.properties]()
+  - [JDBCUtils](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8/%E6%BA%90%E7%A0%81/jdbc/out/production/jdbc/hn/jdbc/utils/JDBCUtils.class)
+  - [jdbc.properties](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8/%E6%BA%90%E7%A0%81/jdbc/out/production/jdbc/jdbc.properties)
 
 -----
 
