@@ -221,15 +221,15 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
             Connection conn = null;
             PreparedStatement pstmt = null;
             try{
-    
+       
                 conn =JDBCUtils.getConnection();
                 String sql = "insert into user values(null,?,?,?)";
-    
+       
                 pstmt =conn.prepareStatement(sql);
                 pstmt.setString(1,"qqq");
                 pstmt.setString(2,"123");
                 pstmt.setString(3,"田七");
-    
+       
                 int i = pstmt.executeUpdate();
                 if (i>0){
                     System.out.println("保存成功");
@@ -242,7 +242,10 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
                 JDBCUtils.release(pstmt,conn);
             }
         }
-    
+     ```
+
+    ```
+  
     ```
 
 + 修改数据
@@ -257,14 +260,14 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
             PreparedStatement pstmt =null;
             try{
                 conn= JDBCUtils.getConnection();
-    
+        
                 String sql = "update user set username= ? ,password =? ,name=?  where uid=?";
                 pstmt=conn.prepareStatement(sql);
                 pstmt.setString(1,"iii");
                 pstmt.setString(2,"123456");
                 pstmt.setString(3,"王八");
                 pstmt.setInt(4,7);
-    
+        
                 int i = pstmt.executeUpdate();
                 if (i>0){
                     System.out.println("修改成功");
@@ -277,7 +280,10 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
                 JDBCUtils.release(pstmt,conn);
             }
         }
-    
+      ```
+
+    ```
+  
     ```
 
 + 删除记录
@@ -327,13 +333,13 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
             try{
                 conn = JDBCUtils.getConnection();
                 String sql = "select * from user";
-    
+        
                 pstmt = conn.prepareStatement(sql);
-    
+        
                 rs= pstmt.executeQuery();
                 while (rs.next()){
                     System.out.println(rs.getInt("uid")+ "   "+ rs.getString("username")+"   "+rs.getString("password")+"    "+rs.getString("name"));
-    
+        
                 }
             }catch(Exception e){
                 e.printStackTrace();
@@ -341,7 +347,7 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
                 JDBCUtils.release(rs,pstmt,conn);
             }
         }
-    
+        
         @Test
         /**
          * 查询单个记录
@@ -352,9 +358,9 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
             ResultSet rs =null;
             try{
                 conn =JDBCUtils.getConnection();
-    
+        
                 String sql ="select * from user where uid = ?";
-    
+        
                 pstmt =conn.prepareStatement(sql);
                 pstmt.setInt(1,3);
                 rs = pstmt.executeQuery();
@@ -367,6 +373,9 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
                 JDBCUtils.release(rs,pstmt,conn);
             }
         }
+      ```
+    ```
+  
     ```
 
 
@@ -379,10 +388,10 @@ JDBC的全称为:Java DataBase Connectivity(java数据库连接)
 
 应用程序直接获取连接的缺点：用户每次请求都需要向数据库获得连接，而数据库创建连接通常需要消耗相对较大的资源，创建时间也较长。假设网站一天10万访问量，数据库服务器就需要创建10万次连接，极大地浪费数据库的资源，并且极易**造成数据库服务器内存溢出**。
 
-+ [连接池架包]()
-+ [连接池工具类]()
-+ [连接池配置文件]()
-+ [连接池使用]()
++ [连接池架包](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8/%E6%BA%90%E7%A0%81/jdbc/lib/c3p0-0.9.1.2.jar)
++ [连接池工具类](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8/%E6%BA%90%E7%A0%81/jdbc/src/hn/jdbc/utils/JDBCUtils2.java)
++ [连接池配置文件](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8/%E6%BA%90%E7%A0%81/jdbc/src/c3p0-config.xml)
++ [连接池使用](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8/%E6%BA%90%E7%A0%81/jdbc/src/hn/jdbc/demo3/DataSourceDemo1.java)
 
 
 
