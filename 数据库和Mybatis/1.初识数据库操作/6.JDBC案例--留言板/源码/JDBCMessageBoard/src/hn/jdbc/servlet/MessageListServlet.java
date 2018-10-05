@@ -1,5 +1,6 @@
 package hn.jdbc.servlet;
 
+import hn.jdbc.bean.Message;
 import hn.jdbc.service.MessageService;
 
 import javax.servlet.ServletException;
@@ -7,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /***
  *  ClassName : MessageListServlet
@@ -36,7 +38,15 @@ public class MessageListServlet extends HttpServlet {
             }
         }
 
-        messageService.getMessages(page,5); //分页查询全部留言
+        List<Message> messages = messageService.getMessages(page,5); //分页查询全部留言
+        int count = messageService.countMessages();
+        int last = count % 5==0?(count/5):((count/5)+1);
+
+        request.setAttribute("last", last);
+        request.setAttribute("messages",messages);
+        request.setAttribute("page",count);
+
+        request.getRequestDispatcher("/WEB-INF/views/biz/message_list.jsp").forward(request,response);
     }
 
     @Override

@@ -24,4 +24,8 @@ public class MessageService {
 
         return messageDAO.getMessage(page,pageSize);
     }
+
+    public int countMessages(){
+        return messageDAO.countMessages();
+    }
 }

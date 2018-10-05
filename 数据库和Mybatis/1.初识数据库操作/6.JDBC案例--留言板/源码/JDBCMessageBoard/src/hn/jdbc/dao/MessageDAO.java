@@ -2,6 +2,7 @@ package hn.jdbc.dao;
 
 import hn.jdbc.bean.Message;
 import hn.jdbc.common.ConnectionUtil;
+import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -22,20 +23,21 @@ public class MessageDAO {
     // page :  当前页码
     // pageSize:  每页记录数
 
-    public List<Message> getMessage(int page, int pageSize) {
+    public List<Message> getMessage(int page, int pageSize){
         Connection conn = ConnectionUtil.getConnection();
-        String sql = "select * from message order by create_time desc limit ? ,? "; //limit m, n :从第m条开始，取出共n条记录
+        String sql = "select * from message order by create_time desc limit ?,? "; //limit m, n :从第m条开始，取出共n条记录
         PreparedStatement stmt = null;
         ResultSet rs = null;
 
         List<Message> messages = new ArrayList<>();
         try {
             stmt = conn.prepareStatement(sql);
-            stmt.setInt(1,(page-1)*pageSize);
-            stmt.setInt(2,pageSize);
-            rs =stmt.executeQuery();
-            while (rs.next()){
-                messages.add(new Message(rs.getLong("id"),rs.getLong("user_id"),
+            stmt.setInt(1, (page - 1) * pageSize);
+            stmt.setInt(2, pageSize);
+            rs = stmt.executeQuery();
+            while (rs.next()) {
+                messages.add(new Message(rs.getLong("id"),
+                        rs.getLong("user_id"),
                         rs.getString("username"),
                         rs.getString("title"),
                         rs.getString("content"),
@@ -43,34 +45,59 @@ public class MessageDAO {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             ConnectionUtil.release(rs, stmt, conn);
         }
-
-
-        return null;
+        return messages;
     }
 
 
     /***
      * 计算所有留言数量
      */
-    public int countMessages(){
+    public int countMessages() {
         Connection conn = ConnectionUtil.getConnection();
         String sql = "select count(*) total from message ";
         PreparedStatement stmt = null;
         ResultSet rs = null;
         try {
-            stmt =conn.prepareStatement(sql);
+            stmt = conn.prepareStatement(sql);
             rs = stmt.executeQuery();
-            while (rs.next()){
+            while (rs.next()) {
                 return rs.getInt("total");
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             ConnectionUtil.release(rs, stmt, conn);
         }
-        return  0 ;
+        return 0;
+    }
+
+
+    @Test
+    /***
+     * 测试数据库连接
+     *
+     */
+    public void demo1() {
+        Connection conn = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+            conn = ConnectionUtil.getConnection();
+
+            String sql = "select * from message";
+            pstmt = conn.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+            while (rs.next()) {
+                System.out.println(rs.getString("title") + rs.getString("content"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            ConnectionUtil.release(rs, pstmt, conn);
+        }
     }
 }

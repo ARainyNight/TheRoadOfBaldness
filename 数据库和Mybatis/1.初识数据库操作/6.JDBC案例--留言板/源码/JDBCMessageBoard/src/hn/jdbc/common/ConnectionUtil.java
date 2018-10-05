@@ -14,15 +14,14 @@ import java.sql.*;
 public final class ConnectionUtil {
     private static final ComboPooledDataSource dataSource = new ComboPooledDataSource();
 
-    private static Connection conn ;
+    private static Connection conn;
     /**
      * 获得连接的方法
      * */
-    public static Connection getConnection(){
+    public static Connection getConnection() {
         try {
             conn = dataSource.getConnection();
         } catch (SQLException e) {
-            System.out.println("加载数据库驱动失败");
             e.printStackTrace();
         }
         return conn ;

@@ -17,4 +17,14 @@
         <error-code>500</error-code>
         <location>/WEB-INF/views/error/500.jsp</location>
     </error-page>
+
+    <servlet>
+        <servlet-name>MessageListServlet</servlet-name>
+        <servlet-class>hn.jdbc.servlet.MessageListServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MessageListServlet</servlet-name>
+        <url-pattern>/message/list.do</url-pattern>
+    </servlet-mapping>
 </web-app>

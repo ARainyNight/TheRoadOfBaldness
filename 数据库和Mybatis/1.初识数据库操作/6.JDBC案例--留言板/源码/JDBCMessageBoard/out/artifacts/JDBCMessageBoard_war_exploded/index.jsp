@@ -7,11 +7,8 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  This is index.jsp<br>
-  $END$
-  </body>
+<head>
+    <title>MessageBoard</title>
+    <meta http-equiv="refresh" content="0;url=<%=request.getContextPath()%>/message/list.do">
+</head>
 </html>
