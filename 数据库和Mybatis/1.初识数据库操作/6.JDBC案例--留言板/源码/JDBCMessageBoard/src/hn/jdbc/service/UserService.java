@@ -1,5 +1,8 @@
 package hn.jdbc.service;
 
+import hn.jdbc.bean.User;
+import hn.jdbc.dao.UserDAO;
+
 /***
  *  ClassName : UserService
  *  Author    : lin
@@ -8,4 +11,14 @@ package hn.jdbc.service;
  */
 
 public class UserService {
+
+    private UserDAO userDAO ;
+
+    public UserService(){
+        userDAO=new UserDAO();
+    }
+
+    public User login(String username , String password){
+        return userDAO.login(username,password);
+    }
 }

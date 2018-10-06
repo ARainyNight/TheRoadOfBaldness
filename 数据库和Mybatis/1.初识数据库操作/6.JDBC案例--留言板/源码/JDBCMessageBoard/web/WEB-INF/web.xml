@@ -27,4 +27,33 @@
         <servlet-name>MessageListServlet</servlet-name>
         <url-pattern>/message/list.do</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>hn.jdbc.servlet.LoginPromptServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/main.do</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginPromptServlet</servlet-name>
+        <servlet-class>hn.jdbc.servlet.LoginPromptServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginPromptServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VerificationCodeImageServlet</servlet-name>
+        <servlet-class>hn.jdbc.servlet.VerificationCodeImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerificationCodeImageServlet</servlet-name>
+        <url-pattern>/verificationCode.do</url-pattern>
+    </servlet-mapping>
 </web-app>

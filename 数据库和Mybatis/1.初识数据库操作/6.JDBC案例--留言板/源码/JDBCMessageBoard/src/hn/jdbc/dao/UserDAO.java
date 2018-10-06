@@ -31,7 +31,12 @@ public class UserDAO {
             while (rs.next()){
                 user = new User();
                 user.setId(rs.getLong("id"));
-
+                user.setName(rs.getString("username"));
+                user.setPassword(rs.getString("password"));
+                user.setRealName(rs.getString("real_name"));
+                user.setBirthday(rs.getDate("birthday"));
+                user.setPhone(rs.getString("phone"));
+                user.setAddress(rs.getString("address"));
             }
         }catch(Exception e){
             System.out.println("登录失败");
@@ -39,6 +44,6 @@ public class UserDAO {
         }finally {
             ConnectionUtil.release(rs,pstmt,conn);
         }
-        return null;
+        return user;
     }
 }
