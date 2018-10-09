@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="hn.app.AppTest" time="0.113" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\1.Maven入门\源码\course\target\test-classes;F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\1.Maven入门\源码\course\target\classes;F:\JAVA\maven\reposi\junit\junit\4.11\junit-4.11.jar;F:\JAVA\maven\reposi\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="F:\JAVA\JavaFile\jdk1.8.0_65\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\lin\AppData\Local\Temp\surefire511469284568765676\surefirebooter6623908987658178936.jar C:\Users\lin\AppData\Local\Temp\surefire511469284568765676 2018-10-09T10-33-57_675-jvmRun1 surefire3589348497753386941tmp surefire_01526756800964254400tmp"/>
+    <property name="surefire.test.class.path" value="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\1.Maven入门\源码\course\target\test-classes;F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\1.Maven入门\源码\course\target\classes;F:\JAVA\maven\reposi\junit\junit\4.11\junit-4.11.jar;F:\JAVA\maven\reposi\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\lin"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="F:\JAVA\JavaFile\jdk1.8.0_65\jre"/>
+    <property name="basedir" value="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\1.Maven入门\源码\course"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\lin\AppData\Local\Temp\surefire511469284568765676\surefirebooter6623908987658178936.jar"/>
+    <property name="sun.boot.class.path" value="F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\resources.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\rt.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\sunrsasign.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\jsse.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\jce.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\charsets.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\jfr.jar;F:\JAVA\JavaFile\jdk1.8.0_65\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_65-b17"/>
+    <property name="user.name" value="lin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="F:\JAVA\maven\reposi"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\lin\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2018.2.2"/>
+    <property name="java.version" value="1.8.0_65"/>
+    <property name="user.dir" value="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\1.Maven入门\源码\course"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="F:\JAVA\JavaFile\jdk1.8.0_65\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;F:\JAVA\apache-maven-3.5.4\bin;F:\JAVA\JavaFile\jdk1.8.0_65;\bin;F:\JAVA\JavaFile\jdk1.8.0_65;\jre\bin;C:\ProgramData\Oracle\Java\javapath;F:\JAVA\JavaFile\jdk1.8.0_65;\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;F:\JAVA\JavaFile\jdk1.8.0_65;\jre\bin;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\MySQL\MySQL Server 5.7\bin;G:\nodejs\;&quot;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;&quot;;C:\Users\lin\AppData\Local\Microsoft\WindowsApps;G:\Android\SDK\platform-tools;C:\Program Files\MySQL\MySQL Server 5.7\bin;G:\nodejs\node_global;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.65-b01"/>
+    <property name="java.ext.dirs" value="F:\JAVA\JavaFile\jdk1.8.0_65\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="maven.repo.local" value="F:\JAVA\maven\reposi"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="shouldAnswerWithTrue" classname="hn.app.AppTest" time="0.002"/>
+</testsuite>

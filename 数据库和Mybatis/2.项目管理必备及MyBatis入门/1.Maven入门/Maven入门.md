@@ -11,5 +11,15 @@
 
 1. 检查JDK安装     cmd   --> `Java -version`
 2. [下载Maven](http://maven.apache.org/download.cgi)
-3. 
+3. [配置Maven环境变量](https://jingyan.baidu.com/article/acf728fd68b4bef8e510a31c.html)
+
+----
+
+### Maven的命令
+
++ `mvn compile`：编译
++ `mvn install`：编译，运行和发布
++ `mvn package`：编译，运行不负责发布
+
+
 
