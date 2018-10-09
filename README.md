@@ -37,6 +37,8 @@
   - [JDBC入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/3.JDBC%E5%85%A5%E9%97%A8)
   - [java反射](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/4.JAVA%E5%8F%8D%E5%B0%84)
   - [JUnit单元测试](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/5.JUnit%E5%85%A5%E9%97%A8)
++ 项目管理必备及MyBatis入门
+  - [Maven入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/2.%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BF%85%E5%A4%87%E5%8F%8AMyBatis%E5%85%A5%E9%97%A8/1.Maven%E5%85%A5%E9%97%A8)
 
 
 
@@ -50,7 +52,7 @@
     - 用户登录，将登录名存储到session里
     - 登录监听器监听session属性中登录值属性变化
     - 若登录用户用户名已登录系统，清除前次登录信息
-+ [使用Jsp+Servlet+JDBC构建留言板]()
++ [使用Jsp+Servlet+JDBC构建留言板](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/6.JDBC%E6%A1%88%E4%BE%8B--%E7%95%99%E8%A8%80%E6%9D%BF/%E6%BA%90%E7%A0%81/JDBCMessageBoard)
   - 案例说明
     - 功能：注册登录、用户、留言(不登录也可以查看全部留言，登录可以查看自己的留言，并进行增删改查)
     - 技术:Jsp+Servlet+JDBC
