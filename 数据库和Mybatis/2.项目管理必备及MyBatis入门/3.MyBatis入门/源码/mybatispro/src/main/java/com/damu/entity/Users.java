@@ -11,7 +11,8 @@ import java.util.Date;
 
 public class Users {
     private Integer id;
-    private String username;
+//    private String username;
+    private String name ;
     private String userpass;
     private String nickname;
     private String age;
@@ -24,6 +25,12 @@ public class Users {
     private Integer userStatus;
     private String remark;
 
+    public Users(){}
+
+    public Users(Integer id) {
+        this.id = id;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -32,12 +39,21 @@ public class Users {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+//    public String getUsername() {
+//        return username;
+//    }
+//
+//    public void setUsername(String username) {
+//        this.username = username;
+//    }
+
+
+    public String getName() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUserpass() {
@@ -127,4 +143,6 @@ public class Users {
     public void setRemark(String remark) {
         this.remark = remark;
     }
+
+
 }

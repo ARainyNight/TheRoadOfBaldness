@@ -16,11 +16,10 @@ import javax.servlet.annotation.WebListener;
 @WebListener
 public class InitSqlSessionListener implements ServletContextListener {
 
-
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         System.out.println("容器加载中.......");
         //初始化SqlSessionFactory对象
-        SqlSessionFactoryUtils.initSqlSessionFactry();
+        SqlSessionFactoryUtils.initSqlSessionFactory();
     }
 
     public void contextDestroyed(ServletContextEvent servletContextEvent) {

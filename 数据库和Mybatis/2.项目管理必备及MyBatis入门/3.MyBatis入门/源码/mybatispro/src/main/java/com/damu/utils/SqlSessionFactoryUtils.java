@@ -26,7 +26,7 @@ public class SqlSessionFactoryUtils {
     /**
      * 创建一个初始化SqlSessionFactory的方法
      * */
-    public static void initSqlSessionFactry(){
+    public static void initSqlSessionFactory(){
         try {
             InputStream is = Resources.getResourceAsStream(RESOURCE);
 

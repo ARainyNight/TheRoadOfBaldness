@@ -15,18 +15,43 @@ import java.util.List;
  */
 
 public class UsersDAO {
-    private SqlSession sqlSession = SqlSessionFactoryUtils.getSqlSessionFactory().openSession();
+    private SqlSession sqlSession;
 
     private List<Users> list ;
+    private Users users ;
 
+    private SqlSession getSession(){
+        sqlSession = SqlSessionFactoryUtils.getSqlSessionFactory().openSession();
+        return sqlSession;
+    }
+
+    /**
+     * 查询全部用户
+     * */
     public List<Users> findAll(){
         try {
-            list =sqlSession.selectList("findAll");
+            list =getSession().selectList("findUsers");
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
             sqlSession.close();
         }
         return list;
+    }
+
+
+    /**
+     * 查询单个用户
+     * */
+    public Users findById(Integer id){
+        try {
+           users =getSession().selectOne("findUsers",new Users(id));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            sqlSession.close();
+        }
+        return users;
     }
 }

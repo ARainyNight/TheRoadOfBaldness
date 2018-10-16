@@ -44,14 +44,23 @@
             <c:forEach var="user" items="${usersList}">
                 <tr>
                     <td>${user.id}</td>
-                    <td>${user.username}</td>
+                    <%--<td>${user.username}</td>--%>
+                    <td>${user.name}</td>
                     <td>${user.nickname}</td>
                     <td>${user.email}</td>
                     <td>${user.phone}</td>
                     <td>${user.createTime}</td>
-                    <td>正常</td>
+                    <c:if test="${user.userStatus==0}">
+                        <td>正常</td>
+                    </c:if>
+                    <c:if test="${user.userStatus==1}">
+                        <td>锁定</td>
+                    </c:if>
+                    <c:if test="${user.userStatus==2}">
+                        <td>删除</td>
+                    </c:if>
                     <td>
-                        <a href="">查看</a>
+                        <a href="${pageContext.request.contextPath}/detail?id=${user.id}">查看</a>
                         <a href="">修改</a>
                         <a href="">删除</a>
                     </td>
