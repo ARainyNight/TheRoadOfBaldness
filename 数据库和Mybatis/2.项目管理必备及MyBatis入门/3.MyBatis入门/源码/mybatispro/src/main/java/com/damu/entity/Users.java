@@ -15,7 +15,7 @@ public class Users {
     private String name ;
     private String userpass;
     private String nickname;
-    private String age;
+    private Integer age;
     private String gender;
     private String phone;
     private String email;
@@ -29,6 +29,34 @@ public class Users {
 
     public Users(Integer id) {
         this.id = id;
+    }
+
+    public Users(String name, String userpass, String nickname, Integer age, String gender, String phone, String email, Date createTime, Date updateTime, Date lastLogin, Integer userStatus) {
+        this.name = name;
+        this.userpass = userpass;
+        this.nickname = nickname;
+        this.age = age;
+        this.gender = gender;
+        this.phone = phone;
+        this.email = email;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+        this.lastLogin = lastLogin;
+        this.userStatus = userStatus;
+    }
+
+    //id,nickname,age,gender,email,phone,remark,new Date()
+
+
+    public Users(Integer id, String nickname, Integer age, String gender, String phone, String email, Date updateTime, String remark) {
+        this.id = id;
+        this.nickname = nickname;
+        this.age = age;
+        this.gender = gender;
+        this.phone = phone;
+        this.email = email;
+        this.updateTime = updateTime;
+        this.remark = remark;
     }
 
     public Integer getId() {
@@ -72,11 +100,11 @@ public class Users {
         this.nickname = nickname;
     }
 
-    public String getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 

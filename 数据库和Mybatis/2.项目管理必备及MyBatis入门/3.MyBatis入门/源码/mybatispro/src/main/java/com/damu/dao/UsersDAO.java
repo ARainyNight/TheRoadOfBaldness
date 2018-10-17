@@ -18,7 +18,7 @@ public class UsersDAO {
     private SqlSession sqlSession;
 
     private List<Users> list ;
-    private Users users ;
+    private Users user ;
 
     private SqlSession getSession(){
         sqlSession = SqlSessionFactoryUtils.getSqlSessionFactory().openSession();
@@ -45,13 +45,47 @@ public class UsersDAO {
      * */
     public Users findById(Integer id){
         try {
-           users =getSession().selectOne("findUsers",new Users(id));
+           user =getSession().selectOne("findUsers",new Users(id));
 
         } catch (Exception e) {
             e.printStackTrace();
         }finally {
             sqlSession.close();
         }
-        return users;
+        return user;
+    }
+
+    /**
+     * 增加一个数据
+     * */
+    public Users addUser(Users user){
+        try {
+
+            getSession().insert("addUser",user);
+            sqlSession.commit();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            sqlSession.close();
+        }
+        return user;
+    }
+
+    /**
+     * 用户修改用户资料的方法
+     * */
+    public Users updateUsers(Users user){
+        try {
+
+           getSession().update("updateUser",user);
+           sqlSession.commit();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            sqlSession.close();
+        }
+        return user;
     }
 }

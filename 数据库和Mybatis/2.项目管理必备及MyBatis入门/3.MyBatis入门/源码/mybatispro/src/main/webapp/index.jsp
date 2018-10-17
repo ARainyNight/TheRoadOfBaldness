@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
     <title>慕课网用户管理中心</title>
@@ -25,7 +26,7 @@
         <div class="jumbotron">
             <h1>MyBatis基础入门课程</h1>
             <p>...</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">查看更多,请去慕课网</a></p>
+            <p><a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/addusers.jsp" role="button">新增用户</a></p>
         </div>
     </div>
     <div class="row">
@@ -49,7 +50,9 @@
                     <td>${user.nickname}</td>
                     <td>${user.email}</td>
                     <td>${user.phone}</td>
-                    <td>${user.createTime}</td>
+                    <td>
+                        <fmt:formatDate value="${user.createTime}" pattern="yyyy-MM-dd"></fmt:formatDate>
+                    </td>
                     <c:if test="${user.userStatus==0}">
                         <td>正常</td>
                     </c:if>

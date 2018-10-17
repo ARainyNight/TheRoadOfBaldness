@@ -39,6 +39,7 @@
   - [JUnit单元测试](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/5.JUnit%E5%85%A5%E9%97%A8)
 + 项目管理必备及MyBatis入门
   - [Maven入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/2.%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BF%85%E5%A4%87%E5%8F%8AMyBatis%E5%85%A5%E9%97%A8/1.Maven%E5%85%A5%E9%97%A8)
+  - [MyBatis入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/2.%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BF%85%E5%A4%87%E5%8F%8AMyBatis%E5%85%A5%E9%97%A8/3.MyBatis%E5%85%A5%E9%97%A8)
 
 
 
