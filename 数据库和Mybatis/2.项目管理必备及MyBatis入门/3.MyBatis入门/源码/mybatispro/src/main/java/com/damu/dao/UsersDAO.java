@@ -88,4 +88,21 @@ public class UsersDAO {
         }
         return user;
     }
+
+    /**
+     * 用户删除的方法
+     * */
+    public void delUsers(Integer id){
+        try {
+
+            getSession().delete("delUser",id);
+            sqlSession.commit();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            sqlSession.close();
+        }
+
+    }
 }

@@ -42,7 +42,7 @@ public class UsersFindByIdServlet extends HttpServlet {
 
         Users user = usersDAO.findById(Integer.parseInt(id));
 
-        log.info("数据是：。。。。。"+user);
+        log.info("数据是：。。。。。"+user.toString());
 
         req.setAttribute("user",user);
 

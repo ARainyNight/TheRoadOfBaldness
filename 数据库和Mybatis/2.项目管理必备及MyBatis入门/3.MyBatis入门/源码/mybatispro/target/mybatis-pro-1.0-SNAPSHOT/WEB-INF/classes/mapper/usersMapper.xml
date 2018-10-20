@@ -16,13 +16,22 @@
     <!--JavaBean属性和数据库字段名称不一致情况下使用-->
     <!--自定义映射关系集合：主要包含对于一些自定义操作的配置，如不一致的属性和字段-->
     <resultMap id="forUsers" type="com.damu.entity.Users">
+
+        <!--绑定ID主键-->
+        <id property="id" column="id"></id>
         <!--<id column="" property=""></id>-->
         <!-- result配置，主要配置普通属性，column表示配置的是数据库字段名称  property配置的是实体类的属性名称-->
         <result column="username" property="name"></result>
+
+        <collection property="addresses" column="id" ofType="com.damu.entity.Address"  select="getAddress"></collection>
     </resultMap>
     <!--<select id="findById" resultType="com.damu.entity.Users">-->
             <!--SELECT * FROM USERS where id = #{id}-->
         <!--</select>-->
+
+    <select id="getAddress" resultType="com.damu.entity.Address">
+        select * from address where userid =#{id}
+    </select>
 
     <sql id="user_fields">
         username,userpass,nickname,age,gender,email,phone,createTime,updateTime,lastLogin,userStatus,remark
@@ -51,4 +60,8 @@
         </set>
         where id = #{id}
     </update>
+
+    <delete id="delUser">
+        delete from users where id = #{id}
+    </delete>
 </mapper>

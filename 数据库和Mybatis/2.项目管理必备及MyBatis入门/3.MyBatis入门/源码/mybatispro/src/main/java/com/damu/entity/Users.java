@@ -1,6 +1,7 @@
 package com.damu.entity;
 
 import java.util.Date;
+import java.util.List;
 
 /***
  *  ClassName : Users
@@ -24,6 +25,8 @@ public class Users {
     private Date lastLogin;
     private Integer userStatus;
     private String remark;
+
+    private List<Address> addresses; //用户地址信息
 
     public Users(){}
 
@@ -172,5 +175,31 @@ public class Users {
         this.remark = remark;
     }
 
+    public List<Address> getAddresses() {
+        return addresses;
+    }
 
+    public void setAddresses(List<Address> addresses) {
+        this.addresses = addresses;
+    }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", userpass='" + userpass + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", lastLogin=" + lastLogin +
+                ", userStatus=" + userStatus +
+                ", remark='" + remark + '\'' +
+                ", addresses=" + addresses +
+                '}';
+    }
 }
