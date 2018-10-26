@@ -2,78 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc40916b-7624-4e08-9b20-e74401fa8628" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/common/MyBatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/entity/Cake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CakeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/web/CharsetEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/resources/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/css/add.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/css/reg.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/img/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/img/QQ-weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/css/form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/css/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/fonts/Marvel-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/fonts/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/close_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/g9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/i1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/i2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/i3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/i4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/m9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/s2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/s3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/slid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/images/tick1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/bootstrap-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/imagezoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/jquery-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/jquery.flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/jquery.jscrollpane.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Site/src/main/webapp/js/simpleCart.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../3.MyBatis入门/源码/mybatispro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../3.MyBatis入门/源码/mybatispro/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/java/com/imooc/cake/servlet/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/add_cake.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/add_category.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/cake_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/category_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/error/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/error/500.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目介绍和演示.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../项目介绍和演示.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/Common/target/" />
@@ -89,115 +29,76 @@
     <session id="-1836446144">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="11" />
           <entry key="js" value="1" />
-          <entry key="jsp" value="1" />
+          <entry key="jsp" value="5" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
-          <entry key="JSP" value="1" />
+          <entry key="JAVA" value="11" />
+          <entry key="JSP" value="5" />
           <entry key="JavaScript" value="1" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2087" />
+          <entry key="java" value="2370" />
           <entry key="properties" value="94" />
-          <entry key="xml" value="88" />
+          <entry key="xml" value="168" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2087" />
+          <entry key="JAVA" value="2370" />
           <entry key="Properties" value="94" />
-          <entry key="XML" value="88" />
+          <entry key="XML" value="168" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/common/MyBatisUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="96">
+              <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/web/CharsetEncodingFilter.java">
+        <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="192">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/add_cake.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/resources/config.xml">
+        <entry file="file://$PROJECT_DIR$/Management/src/main/java/com/imooc/cake/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/resources/jdbc.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CakeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="48" />
+            <state relative-caret-position="439">
+              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/entity/Cake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="480">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#464#465#0" expanded="true" />
                 <element signature="e#489#490#0" expanded="true" />
@@ -249,9 +150,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CakeMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../../../../../JavaFile/jdk1.8.0_65/src.zip!/java/lang/String.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CategoryMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+            <state relative-caret-position="377">
               <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -261,29 +183,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/entity/Category.java">
+        <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/error/404.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/category_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#542#543#0" expanded="true" />
-                <element signature="e#577#578#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#772#773#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-360" />
           </provider>
         </entry>
       </file>
@@ -305,8 +212,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Site/pom.xml" />
-        <option value="$PROJECT_DIR$/Management/pom.xml" />
-        <option value="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/Common/pom.xml" />
         <option value="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/common/MyBatisUtils.java" />
         <option value="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/web/CharsetEncodingFilter.java" />
@@ -316,6 +221,9 @@
         <option value="$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CakeMapper.java" />
         <option value="$PROJECT_DIR$/Common/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/Common/src/main/resources/config.xml" />
+        <option value="$PROJECT_DIR$/Management/pom.xml" />
+        <option value="$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/Management/src/main/java/com/imooc/cake/servlet/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -338,7 +246,7 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="cake-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="cake-management" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -357,7 +265,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -432,49 +339,126 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="imooc" type="462c0819:PsiDirectoryNode" />
               <item name="cake" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cake" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="imooc" type="462c0819:PsiDirectoryNode" />
               <item name="cake" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cake" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc" type="462c0819:PsiDirectoryNode" />
+              <item name="cake" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cake" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cake" type="462c0819:PsiDirectoryNode" />
+              <item name="Management" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540478051522" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540519094526" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\4.MyBatis案例\源码\Cake\Management\src\main\webapp\WEB-INF\views\error" />
+      <recent name="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\4.MyBatis案例\源码\Cake\Management\src\main\webapp\WEB-INF\views\biz" />
       <recent name="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\4.MyBatis案例\源码\Cake\Site\src\main\webapp\WEB-INF" />
       <recent name="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\4.MyBatis案例\源码\Cake\Site\src\main\webapp" />
       <recent name="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\4.MyBatis案例\源码\Cake\Management\src\main\webapp" />
-      <recent name="F:\JAVA\秃头之路\数据库和Mybatis\2.项目管理必备及MyBatis入门\4.MyBatis案例\源码\Cake\Management\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -500,28 +484,24 @@
       <option name="presentableId" value="Default" />
       <updated>1540473609885</updated>
       <workItem from="1540473611496" duration="4421000" />
+      <workItem from="1540518079486" duration="996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4421000" />
+    <option name="totallyTimeSpent" value="5417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Web" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -529,15 +509,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" weight="0.3297587" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297587" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -555,36 +540,8 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Management/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Site/src/main/webapp/js/imagezoom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#30#36#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Site/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -601,28 +558,16 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/common/MyBatisUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-          </folding>
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/web/CharsetEncodingFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="192">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -630,35 +575,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/entity/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#542#543#0" expanded="true" />
-            <element signature="e#577#578#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/main/resources/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Management/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/error/404.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/add_cake.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../JavaFile/jdk1.8.0_65/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/entity/Cake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="480">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="e#464#465#0" expanded="true" />
             <element signature="e#489#490#0" expanded="true" />
@@ -698,7 +682,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
+        <state relative-caret-position="377">
           <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -708,25 +692,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Common/src/main/java/com/imooc/cake/mapper/CakeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="48" />
+        <state relative-caret-position="343">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/Management/src/main/webapp/WEB-INF/views/biz/category_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-        </state>
+        <state relative-caret-position="-360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/main/resources/config.xml">
+    <entry file="file://$PROJECT_DIR$/Management/src/main/java/com/imooc/cake/servlet/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="439">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
