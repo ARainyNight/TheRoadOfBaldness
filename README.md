@@ -1,7 +1,5 @@
 
 
-----
-
  ### Web入门
 
 + 网页入门
@@ -48,28 +46,5 @@
 + Spring从入门到进阶
   - [Spring入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/1.Spring%E5%85%A5%E9%97%A8)
 
--------
+---
 
-### 项目案例
-
-+ [Java监听器项目案例](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/web%E5%85%A5%E9%97%A8/3.javaweb%E5%9F%BA%E7%A1%80%E8%BF%9B%E9%98%B6/5.%E7%9B%91%E5%90%AC%E5%99%A8/%E6%BA%90%E7%A0%81/LoginListenerWeb)
-  - 案例说明
-    - 通过过滤器实现登录控制，未登录用户不能访问系统首页
-    - 用户登录，将登录名存储到session里
-    - 登录监听器监听session属性中登录值属性变化
-    - 若登录用户用户名已登录系统，清除前次登录信息
-+ [使用Jsp+Servlet+JDBC构建留言板](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CMybatis/1.%E5%88%9D%E8%AF%86%E6%95%B0%E6%8D%AE%E5%BA%93%E6%93%8D%E4%BD%9C/6.JDBC%E6%A1%88%E4%BE%8B--%E7%95%99%E8%A8%80%E6%9D%BF/%E6%BA%90%E7%A0%81/JDBCMessageBoard)
-  - 案例说明
-    - 功能：注册登录、用户、留言(不登录也可以查看全部留言，登录可以查看自己的留言，并进行增删改查)
-    - 技术:Jsp+Servlet+JDBC
-    - 具体功能
-      - 查看留言
-      - 注册登录
-      - 发表留言
-      - 个人信息
-      - 删除留言
-      - 修改留言
-    - 技术点介绍
-      - 页面:`Jsp`+`JSTL`+`JS`+`css`
-      - 核心控制：`Filter`、`Listener`、`Servlet`
-      - `JDBC`+`MySQL`
