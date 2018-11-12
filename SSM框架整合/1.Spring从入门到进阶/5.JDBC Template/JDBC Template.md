@@ -118,4 +118,46 @@
       List<Map<String ,Object>> queryForList(String sql , Object...arg)
       ```
 
-  
++ 查询复杂对象(封装为实体对象)
+
+  - RowMapper接口
+
+  - 获取一个
+
+    - ```java
+      T queryForObject(String sql ,RowMapper<T> mapper)
+      T queryForObject(String sql ,Object[] args ,RowMapper<T> mapper)
+      T queryForObject(String sql ,RowMapper<T> mapper,Object...arg)
+      ```
+
+  - 获取多个
+
+    - ```java
+      List<T> query(String sql ,RowMapper<T> mapper)
+      List<T> query(String sql ,Object[] args,RowMapper<T> mapper)
+      List<T> query(String sql ,RowMapper<T> mapper,Object..arg)
+      ```
+
+### JDBC Template持久层示例
+
++ 实体类
++ DAO
+  - 注入JdbcTemplate
+  - 声明RowMapper
++ 优缺点分析
+  - 优点
+    - 简单
+    - 灵活
+  - 缺点
+    - SQL与Java代码复杂
+    - 功能不丰富
+
+### 总结
+
++ 持久化操作特点
+  - 必须
+  - 机械性
++ ORM
+  - 对象-关系映射
++ JDBC Template是Spring框架对JDBC操作的封装，简单、灵活但不够强大
++ 实际应用中还需要和其它ORM框架混合使用

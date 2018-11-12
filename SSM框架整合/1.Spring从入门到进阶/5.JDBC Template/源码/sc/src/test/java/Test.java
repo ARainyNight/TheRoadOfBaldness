@@ -1,8 +1,12 @@
+import com.hn.sc.entity.Student;
 import javafx.application.Application;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -117,7 +121,7 @@ public class Test {
      }
 
     /**
-     * 查询复杂对象
+     * 查询复杂对象(封装为Map)
      * 查询一个
      * queryForMap
      */
@@ -129,7 +133,7 @@ public class Test {
     }
 
     /**
-     * 查询复杂对象
+     * 查询复杂对象(封装为Map)
      * 查询多个
      * queryForList
      */
@@ -139,6 +143,47 @@ public class Test {
         List<Map<String,Object>> stus = jdbcTemplate.queryForList(sql);
         for (Map<String,Object> stu :stus){
             System.out.println(stu);
+        }
+    }
+
+
+    /**
+     * 查询复杂对象(封装为实体对象)
+     * 获取一个
+     * queryForObject
+     */
+    @org.junit.Test
+    public void testQueryEntity1(){
+        String sql = "select * from student where id = ?";
+        Student stu = jdbcTemplate.queryForObject(sql, new StudentRowMapper(), 2);
+
+        System.out.println(stu);
+    }
+
+
+    /**
+     * 查询复杂对象(封装为实体对象)
+     * 获取一个
+     */
+    @org.junit.Test
+    public void testQueryEntity2(){
+        String sql  ="select * from student";
+        List<Student> stus = jdbcTemplate.query(sql, new StudentRowMapper());
+        for (Student st :stus){
+            System.out.println(st);
+        }
+    }
+
+
+    private class StudentRowMapper implements RowMapper<Student> {
+
+        public Student mapRow(ResultSet resultSet, int i) throws SQLException {
+            Student stu = new Student();
+            stu.setId(resultSet.getInt("id"));
+            stu.setName(resultSet.getString("name"));
+            stu.setSex(resultSet.getString("sex"));
+            stu.setBorn(resultSet.getDate("born"));
+            return stu;
         }
     }
 }
