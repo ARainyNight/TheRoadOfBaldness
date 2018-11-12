@@ -58,9 +58,11 @@
 
   - 数据源
   - JDBC Template
-  - [配置]()
+  - [配置](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/5.JDBC%20Template/%E6%BA%90%E7%A0%81/sc/src/main/resources/spring.xml)
 
 ### JDBC Template基本使用
+
++ [Test.java](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/5.JDBC%20Template/%E6%BA%90%E7%A0%81/sc/src/test/java/Test.java)
 
 + update方法
 
