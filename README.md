@@ -49,6 +49,7 @@
   - [Spring AOP](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/3.Spring%20AOP)
   - [基于AspectJ的AOP开发](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/4.%E5%9F%BA%E4%BA%8EAspectJ%E7%9A%84AOP%E5%BC%80%E5%8F%91)
   - [JDBC Template](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/5.JDBC%20Template)
+  - [Spring事务管理](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/1.Spring%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%BF%9B%E9%98%B6/6.Spring%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86)
 
 ---
 
