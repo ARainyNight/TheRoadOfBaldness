@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
  *  ClassName : DispatcherServlet
  *  Author    : lin
  *  Date      : 2018/11/13 17:05    
- *  Remark    : 
+ *  Remark    : 核心控制器
  */
 
 public class DispatcherServlet extends GenericServlet {

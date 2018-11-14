@@ -7,7 +7,7 @@ import java.io.IOException;
  *  ClassName : EncodingFilter
  *  Author    : lin
  *  Date      : 2018/11/13 15:14    
- *  Remark    : 
+ *  Remark    : 编码过滤器
  */
 
 public class EncodingFilter implements Filter {
