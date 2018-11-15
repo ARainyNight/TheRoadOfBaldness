@@ -3,23 +3,21 @@
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" >
     <title>个人信息</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
     <link rel="stylesheet" type="text/css" href="../css/thems.css">
     <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript">
-        $(function () {
+        $(function(){
             //自适应屏幕宽度
-            window.onresize = function () {
-                location = location
-            };
+            window.onresize=function(){ location=location };
             var main_h = $(window).height();
-            $('.hy_list').css('height', main_h - 45 + 'px');
+            $('.hy_list').css('height',main_h-45+'px');
             var main_w = $(window).width();
-            $('.xjhy').css('width', main_w - 40 + 'px');
+            $('.xjhy').css('width',main_w-40+'px');
         });
     </script>
 </head>
@@ -80,6 +78,7 @@
                     <li class="clearfix">
                         <span class="title">备注：</span>
                         <div class="li_r">${USER.info}</div>
+                    </li>
                 </ul>
                 <!--高级配置-->
             </div>

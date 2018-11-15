@@ -1,9 +1,5 @@
 package com.imooc.sm.entity;
 
-/**
- * 部门实体类
- */
-
 public class Department {
     private Integer id;
     private String name;

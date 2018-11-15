@@ -1,9 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>部门列表</title>
+    <title>${TYPE}日志</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
     <link rel="stylesheet" type="text/css" href="../css/common.css"/>
     <link rel="stylesheet" type="text/css" href="../css/thems.css">
@@ -27,35 +28,29 @@
     <div class="right_m">
         <div class="hy_list">
             <div class="box_t">
-                <span class="name">部门列表</span>
+                <span class="name">${TYPE}日志</span>
             </div>
             <div class="space_hx">&nbsp;</div>
             <!--列表-->
             <table cellpadding="0" cellspacing="0" class="list_hy">
                 <tr>
-                    <th scope="col">名称</th>
-                    <th scope="col">地址</th>
+                    <th scope="col">操作时间</th>
+                    <th scope="col">操作员</th>
+                    <th scope="col">模块</th>
                     <th scope="col">操作</th>
+                    <th scope="col">结果</th>
                 </tr>
-                <c:forEach items="${LIST}" var="dep">
+                <c:forEach items="${LIST}" var="log">
                     <tr>
-                        <td>${dep.name}</td>
-                        <td>${dep.address}</td>
-                        <td>
-                            <a href="toEdit.do?id=${dep.id}" class="btn">编辑</a>
-                            <a href="remove.do?id=${dep.id}" class="btn">删除</a>
-                        </td>
+                        <td><fmt:formatDate value="${log.oprTime}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                        <td>${log.operator}</td>
+                        <td>${log.moudle}</td>
+                        <td>${log.operation}</td>
+                        <td>${log.result}</td>
                     </tr>
                 </c:forEach>
             </table>
             <!--列表-->
-            <!--右边底部-->
-            <div class="r_foot">
-                <div class="r_foot_m">
-                    <a href="toAdd.do" class="btn">添加</a>
-                </div>
-            </div>
-            <!--右边底部-->
         </div>
         <!--会议列表-->
     </div>

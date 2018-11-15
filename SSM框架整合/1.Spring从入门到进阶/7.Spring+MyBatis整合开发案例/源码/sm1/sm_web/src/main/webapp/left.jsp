@@ -49,13 +49,13 @@
             </div>
             <ul class="erji">
                 <li>
-                    <span><a href="#" target="main">操作日志</a></span>
+                    <span><a href="log/operationLog.do" target="main">操作日志</a></span>
                 </li>
                 <li>
-                    <span><a href="#" target="main">登陆日志</a></span>
+                    <span><a href="log/loginLog.do" target="main">登陆日志</a></span>
                 </li>
                 <li>
-                    <span><a href="#" target="main">系统日志</a></span>
+                    <span><a href="log/systemLog.do" target="main">系统日志</a></span>
                 </li>
             </ul>
         </li>

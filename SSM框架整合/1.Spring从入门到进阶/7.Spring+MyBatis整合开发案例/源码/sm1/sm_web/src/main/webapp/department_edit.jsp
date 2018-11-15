@@ -12,13 +12,10 @@
         $(function(){
             //自适应屏幕宽度
             window.onresize=function(){ location=location };
-
             var main_h = $(window).height();
             $('.hy_list').css('height',main_h-45+'px');
-
             var main_w = $(window).width();
             $('.xjhy').css('width',main_w-40+'px');
-
         });
     </script>
 </head>
@@ -31,24 +28,24 @@
                 <span class="name">编辑部门</span>
             </div>
             <div class="space_hx">&nbsp;</div>
-            <form action="add.do" method="post" name="addForm">
-                <input  name="id" type="hidden" value="${OBJ.id}">
+            <form action="edit.do" method="post" name="addForm">
+                <input  name="id" type="hidden" value="${OBJ.id}"/>
                 <div class="xjhy">
                     <!--高级配置-->
                     <ul class="hypz gjpz clearfix">
                         <li class="clearfix">
                             <span class="title">名称：</span>
                             <div class="li_r">
-                                <input class="chang" name="name" type="text" value="${OBJ.name}">
+                                <input class="chang" name="name" type="text" value="${OBJ.name}"/>
+                                <i>*</i>
                             </div>
                         </li>
                         <li class="clearfix">
                             <span class="title">地址：</span>
                             <div class="li_r">
-                                <input class="chang" name="address" type="text" value="${OBJ.address}">
+                                <input class="chang" name="address" type="text" value="${OBJ.address}"/>
                             </div>
                         </li>
-
                         <li class="tj_btn">
                             <a href="javascript:history.go(-1);" class="back">返回</a>
                             <a href="javascript:addForm.submit();">保存</a>

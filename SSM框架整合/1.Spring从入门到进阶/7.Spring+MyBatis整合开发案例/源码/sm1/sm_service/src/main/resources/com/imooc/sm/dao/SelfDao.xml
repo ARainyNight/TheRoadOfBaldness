@@ -3,7 +3,7 @@
 <mapper namespace="com.imooc.sm.dao.SelfDao">
 
     <select id="selectByAccount" parameterType="String" resultMap="com.imooc.sm.dao.StaffDao.resultMap">
-        select * from staff where account= #{account}
+        select * from staff where account=#{account}
     </select>
 
 </mapper>

@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lin
-  Date: 2018/11/15
-  Time: 9:16
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,13 +12,10 @@
         $(function(){
             //自适应屏幕宽度
             window.onresize=function(){ location=location };
-
             var main_h = $(window).height();
             $('.hy_list').css('height',main_h-45+'px');
-
             var main_w = $(window).width();
             $('.xjhy').css('width',main_w-40+'px');
-
         });
     </script>
 </head>
@@ -45,17 +35,16 @@
                         <li class="clearfix">
                             <span class="title">名称：</span>
                             <div class="li_r">
-                                <input class="chang" name="name" type="text">
+                                <input class="chang" name="name" type="text"/>
                                 <i>*</i>
                             </div>
                         </li>
                         <li class="clearfix">
                             <span class="title">地址：</span>
                             <div class="li_r">
-                                <input class="chang" name="address" type="text">
+                                <input class="chang" name="address" type="text"/>
                             </div>
                         </li>
-
                         <li class="tj_btn">
                             <a href="javascript:history.go(-1);" class="back">返回</a>
                             <a href="javascript:addForm.submit();">保存</a>
@@ -69,4 +58,3 @@
 </div>
 </body>
 </html>
-
