@@ -11,18 +11,37 @@ import java.util.List;
 
 public class Dept {
 
-    private Integer id ;
-    private String departmentName ;
-    private List<Person> emps;
+    private Integer id;
 
+    private String departmentName;
 
-    public Dept() {
-        super();
-    }
+    private List<Person> persons;
 
     public Dept(Integer id) {
         super();
         this.id = id;
+    }
+
+    public Dept() {
+        super();
+
+    }
+
+    @Override
+    public String toString() {
+        return "Dept{" +
+                "id=" + id +
+                ", departmentName='" + departmentName + '\'' +
+                ", persons=" + persons +
+                '}';
+    }
+
+    public List<Person> getPersons() {
+        return persons;
+    }
+
+    public void setPersons(List<Person> persons) {
+        this.persons = persons;
     }
 
     public Integer getId() {
@@ -41,11 +60,5 @@ public class Dept {
         this.departmentName = departmentName;
     }
 
-    public List<Person> getEmps() {
-        return emps;
-    }
 
-    public void setEmps(List<Person> emps) {
-        this.emps = emps;
-    }
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hn.mybatis.dao.PersonMapper">
+    <resultMap id="BaseResultMap" type="com.hn.mybatis.bean.Person">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="email" property="email" jdbcType="VARCHAR"/>
+        <result column="gender" property="gender" jdbcType="VARCHAR"/>
+        <result column="dept_id" property="deptId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <select id="getPersonByNameAndGender" resultType="person">
+    select * from person where username= #{username} and gender =#{gender};
+  </select>
+
+    <delete id="deletePerson" parameterType="int">
+    delete from person where id = #{parmeter}
+  </delete>
+    
+    <select id="getPersonByCollection" resultType="person">
+        select * from person where id =#{test[0]};
+    </select>
+    
+    <select id="getPersonsByIds" resultType="person">
+        select * from person where id in
+        <foreach collection="array" item="id" index="i" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+
+</mapper>
