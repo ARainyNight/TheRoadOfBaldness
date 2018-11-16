@@ -7,47 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce253ea4-f00f-41b7-ad1b-d37ba8e8b755" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/dao/LogDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/entity/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/service/LogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/service/impl/LogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/LogDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_web/src/main/java/com/imooc/sm/controller/LogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_web/src/main/java/com/imooc/sm/global/LogAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/log_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../案例概述.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../案例概述.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/dao/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/entity/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/service/impl/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/service/impl/StaffServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/SelfDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/SelfDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/target/classes/com/imooc/sm/dao/SelfDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/target/classes/com/imooc/sm/dao/SelfDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/target/classes/com/imooc/sm/entity/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/target/classes/com/imooc/sm/entity/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_service/target/classes/com/imooc/sm/service/impl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sm_service/target/classes/com/imooc/sm/service/impl/StaffServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/java/com/imooc/sm/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/java/com/imooc/sm/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/java/com/imooc/sm/controller/SelfController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/java/com/imooc/sm/controller/SelfController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/change_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/change_password.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/department_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/department_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/department_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/department_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/department_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/department_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/left.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/src/main/webapp/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/src/main/webapp/top.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/classes/com/imooc/sm/controller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/classes/com/imooc/sm/controller/DepartmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/classes/com/imooc/sm/controller/SelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/classes/com/imooc/sm/controller/SelfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/classes/com/imooc/sm/controller/DepartmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/classes/com/imooc/sm/controller/DepartmentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/classes/com/imooc/sm/controller/SelfController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/classes/com/imooc/sm/controller/SelfController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/lib/sm_service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/lib/sm_service-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/change_password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/change_password.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/department_add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/department_add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/department_edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/department_edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/department_list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/department_list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/info.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/left.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/left.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sm_web/target/sm_web/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/sm_web/target/sm_web/top.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +23,12 @@
     <session id="-1478494034">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -166,8 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/staff_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="55" column="77" selection-start-line="55" selection-start-column="77" selection-end-line="55" selection-end-column="77" />
+            <state relative-caret-position="257">
+              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -176,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/top.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -184,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="864">
               <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
             </state>
           </provider>
@@ -193,7 +154,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/StaffDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
+            <state relative-caret-position="888">
               <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
             </state>
           </provider>
@@ -294,7 +255,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1920" />
-    <option name="height" value="1039" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -305,8 +266,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -483,6 +442,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -602,12 +563,13 @@
       <updated>1542198656839</updated>
       <workItem from="1542198658743" duration="2001000" />
       <workItem from="1542243993496" duration="21238000" />
-      <workItem from="1542271939510" duration="855000" />
+      <workItem from="1542271939510" duration="2995000" />
+      <workItem from="1542286529993" duration="98000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24094000" />
+    <option name="totallyTimeSpent" value="26332000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,7 +584,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -632,7 +594,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49865952" visible="true" weight="0.66950357" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49865952" weight="0.66950357" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -693,30 +655,27 @@
     <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/SeleDao" />
     <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/SalfDao.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_web/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-37">
           <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
         </state>
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_service/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1189" />
       </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_service/src/main/java/com/imooc/sm/dao/LogDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,9 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="607">
           <caret line="59" column="7" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-          <folding>
-            <element signature="e#1163#1169#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -926,9 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="607">
           <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-          <folding>
-            <element signature="e#1163#1169#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,28 +951,28 @@
     <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/top.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/StaffDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="864">
           <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sm_service/src/main/resources/com/imooc/sm/dao/StaffDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sm_web/src/main/webapp/staff_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="55" column="77" selection-start-line="55" selection-start-column="77" selection-end-line="55" selection-end-column="77" />
+        <state relative-caret-position="257">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
         </state>
       </provider>
     </entry>
