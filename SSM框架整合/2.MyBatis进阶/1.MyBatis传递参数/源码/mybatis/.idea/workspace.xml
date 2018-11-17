@@ -43,14 +43,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2145" />
+          <entry key="java" value="2188" />
           <entry key="properties" value="103" />
           <entry key="xml" value="822" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2145" />
+          <entry key="JAVA" value="2188" />
           <entry key="Properties" value="103" />
           <entry key="SQL" value="6" />
           <entry key="XML" value="816" />
@@ -126,11 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/PersonMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+            <state relative-caret-position="207">
+              <caret line="39" column="13" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="39" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -144,11 +144,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hn/mybatis/test/ParameterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+            <state relative-caret-position="353">
+              <caret line="124" column="5" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="124" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2973#2981#0" expanded="true" />
@@ -309,7 +309,7 @@
     <property name="SearchEverywhereHistoryKey" value="person&#9;PSI&#9;JAVA://com.hn.mybatis.bean.Dept#persons&#10;par&#9;FILE&#9;file://F:/JAVA/秃头之路/SSM框架整合/2.MyBatis进阶/1.MyBatis传递参数/源码/mybatis/src/main/java/com/hn/mybatis/test/ParameterTest.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542421773298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542421787557" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyBatis参数传递源代码" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -385,7 +385,7 @@
       <option name="presentableId" value="Default" />
       <updated>1542364063861</updated>
       <workItem from="1542364066049" duration="11023000" />
-      <workItem from="1542420070374" duration="1553000" />
+      <workItem from="1542420070374" duration="1877000" />
     </task>
     <servers />
   </component>
@@ -398,10 +398,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12576000" />
+    <option name="totallyTimeSpent" value="12900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
@@ -516,21 +516,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/PersonMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hn/mybatis/test/ParameterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="119" column="12" selection-start-line="119" selection-start-column="12" selection-end-line="119" selection-end-column="12" />
+        <state relative-caret-position="353">
+          <caret line="124" column="5" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="124" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2973#2981#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/PersonMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="37" selection-start-column="2" selection-end-line="39" selection-end-column="13" />
         </state>
       </provider>
     </entry>
