@@ -16,17 +16,28 @@
     <delete id="deletePerson" parameterType="int">
     delete from person where id = #{parmeter}
   </delete>
-    
+
     <select id="getPersonByCollection" resultType="person">
         select * from person where id =#{test[0]};
     </select>
-    
+
     <select id="getPersonsByIds" resultType="person">
         select * from person where id in
         <foreach collection="array" item="id" index="i" open="(" close=")" separator=",">
             #{id}
         </foreach>
     </select>
+
+    <insert id="addPersons">
+        insert into person(username,email,gender) values
+        <foreach collection="persons" item="person" separator=",">
+            (#{person.username},#{person.email},#{person.gender})
+        </foreach>
+    </insert>
+
+    <insert id="addPerson" parameterType="person">
+        insert into person (username,email,gender) values (#{username},#{email},#{gender});
+    </insert>
 
 
 </mapper>

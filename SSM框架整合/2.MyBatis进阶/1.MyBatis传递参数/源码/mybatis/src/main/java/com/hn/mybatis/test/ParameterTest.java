@@ -3,6 +3,7 @@ package com.hn.mybatis.test;
 import com.hn.mybatis.bean.Person;
 import com.hn.mybatis.dao.PersonMapper;
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -10,10 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.io.Reader;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /***
  *  ClassName : ParameterTest
@@ -93,10 +91,46 @@ public class ParameterTest {
         }
     }
 
+
+    public void processMyBatisBatch(){
+        SqlSession sqlSession= this.getSqlSessionFactory().openSession();
+        PersonMapper personMapper = sqlSession.getMapper(PersonMapper.class);
+
+        List<Person> persons=  new ArrayList<Person>();
+
+        for (int i = 0; i <5 ; i++) {
+            Person person = new Person("tom"+i,"@email"+i,"f");
+            persons.add(person);
+        }
+
+        personMapper.addPersons(persons);
+
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+
+    public void testBatchForExecutor(){
+        //使当前sqlsession有批处理的能力
+        SqlSession sqlSession = this.getSqlSessionFactory().openSession(ExecutorType.BATCH);
+
+        PersonMapper personMapper =sqlSession.getMapper(PersonMapper.class);
+
+        for (int i = 0; i <1000 ; i++) {
+            personMapper.addPerson(new Person("tom"+i,i+"@imooc.com","f"));
+        }
+
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
     public static void main(String []args){
 //        new ParameterTest().deletPerson();
 //        new ParameterTest().testPersonByNameAndGender();
 //        new ParameterTest().testCollection();
-        new ParameterTest().testForeach();
+//        new ParameterTest().testForeach();
+//        new ParameterTest().processMyBatisBatch();
+        new ParameterTest().testBatchForExecutor();
+
     }
 }
