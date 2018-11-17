@@ -127,10 +127,10 @@ public class ParameterTest {
     public static void main(String []args){
 //        new ParameterTest().deletPerson();
 //        new ParameterTest().testPersonByNameAndGender();
-//        new ParameterTest().testCollection();
+        new ParameterTest().testCollection();
 //        new ParameterTest().testForeach();
 //        new ParameterTest().processMyBatisBatch();
-        new ParameterTest().testBatchForExecutor();
+//        new ParameterTest().testBatchForExecutor();
 
     }
 }

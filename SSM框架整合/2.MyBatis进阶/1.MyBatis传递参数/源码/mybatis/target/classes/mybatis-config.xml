@@ -15,21 +15,24 @@
 		<setting name="aggressiveLazyLoading" value="false"/>
 	</settings>
 	
-
-	<!--包扫描-->
+ 
+	 
 	<typeAliases>
 		<package name="com.hn.mybatis.bean"/>
 	</typeAliases>
-
 	<plugins>
+
 		<plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
 
-		<!--<plugin interceptor="com.mooc.mybatis.interceptor.MyFirstInterceptor">
+		<plugin interceptor="com.hn.mybatis.interceptor.MyFirstInterceptor">
 			<property name="hello" value="world"></property>
 		</plugin>
 
-		<plugin interceptor="com.mooc.mybatis.interceptor.MySecondInterceptor">
-		</plugin>-->
+		<plugin interceptor="com.hn.mybatis.interceptor.MySecondInterceptor">
+			<property name="hello" value="world"></property>
+		</plugin>
+
+
 
 	</plugins>
 

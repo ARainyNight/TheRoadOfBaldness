@@ -38,6 +38,10 @@
     <insert id="addPerson" parameterType="person">
         insert into person (username,email,gender) values (#{username},#{email},#{gender});
     </insert>
+    
+    <select id="getAllPersons" resultType="person">
+        select * from person
+    </select>
 
 
 </mapper>

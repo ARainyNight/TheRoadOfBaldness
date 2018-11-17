@@ -32,4 +32,7 @@ public interface PersonMapper {
 
     public int addPerson(Person person);
 
+
+    public List<Person> getAllPersons();
+
 }
