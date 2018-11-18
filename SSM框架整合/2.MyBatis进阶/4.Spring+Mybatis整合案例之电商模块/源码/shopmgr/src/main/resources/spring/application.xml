@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+      				  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+      				  http://www.springframework.org/schema/tx
+      				  http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+      				  http://www.springframework.org/schema/context
+      				  http://www.springframework.org/schema/context/spring-context-4.0.xsd
+      				  ">
+
+    <!--配置一个扫描器-->
+    <!--全局扫描-->
+    <context:component-scan base-package="com.hn.shop"/>
+
+    <!--配置数据源的配置-->
+    <!--C3P0作为数据源-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"></bean>
+
+    <!--配置连接工厂SqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--扫描类型，为类型配置别名,默认配置的别名就是类名
+        以后映射文件中无需写类型的权限名-->
+        <property name="typeAliasesPackage">
+            <value>
+                com.hn.shop.bean
+            </value>
+        </property>
+    </bean>
+
+    <!--配置扫描数据访问层接口的路径，为数据访问层接口做实现类对象-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage">
+            <value>
+                com.hn.shop.repository
+            </value>
+        </property>
+    </bean>
+
+    <!--配置事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+
+        <!--申明使事务，使用事务注解的方式去控制业务层的事务-->
+        <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    </bean>
+
+
+</beans>
