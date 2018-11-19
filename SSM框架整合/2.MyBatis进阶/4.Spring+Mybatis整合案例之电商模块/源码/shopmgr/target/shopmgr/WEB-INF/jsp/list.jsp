@@ -27,11 +27,11 @@
 <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a  class="navbar-brand " style="color: red" href="<c:url value=""/>">电商系统,卖家系统-商品管理</a>
+            <a  class="navbar-brand " style="color: red" href="<c:url value="/list?method=getAll"/>">电商系统,卖家系统-商品管理</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="<c:url value=""/>">退出</a></li>
+                <li><a href="<c:url value="/logout"/>">退出</a></li>
             </ul>
         </div>
 
@@ -50,7 +50,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
             <div class="list-group">
                 <c:forEach items="${requestScope.firstArticleTypes }" var="type">
-                    <a href="<c:url value=""/>" class="list-group-item <c:if test="${type.code eq param.typeCode or top.code eq fn:substring(param.typeCode, 0, 4) }">active</c:if>">${type.name }</a>
+                    <a href="<c:url value="/list?method=getAll&typeCode=${type.code }"/>" class="list-group-item <c:if test="${type.code eq param.typeCode or top.code eq fn:substring(param.typeCode, 0, 4) }">active</c:if>">${type.name }</a>
                 </c:forEach>
             </div>
         </div>
@@ -64,35 +64,35 @@
 
             <div class="alert alert-info" role="alert">
                 <div>
-                    <form action="<c:url value=""/>" method="post">
+                    <form action="<c:url value="/list?method=getAll"/>" method="post">
                         <table class="table-condensed">
                             <tbody>
                             <tr>
                                 <td>
-                                <select class="btn btn-default" placeholder="类型" id="secondType"
-                                        name="secondType">
-                                    <option value="">==请选择类型==</option>
-                                    <c:forEach items="${requestScope.secondTypes }" var="t">
-                                        <option value="${t.code}">${t.name}</option>
-                                    </c:forEach>
-                                </select>
+                                    <select class="btn btn-default" placeholder="类型" id="secondType"
+                                            name="secondType">
+                                        <option value="">==请选择类型==</option>
+                                        <c:forEach items="${requestScope.secondTypes }" var="t">
+                                            <option value="${t.code}">${t.name}</option>
+                                        </c:forEach>
+                                    </select>
                                 </td>
                                 <td>
-                                <!-- 如果当前选择了商品的类型，仅在该类型下面进行搜索 -->
-                                <input type="hidden" name="typeCode" value="${typeCode }" />
-                                <div class="input-group">
-                                    <input type="text" name="title" value="${title}"
-                                           class="form-control" placeholder="搜索商品的标题" />
-                                    <div class="input-group-btn">
-                                        <button class="btn" type="submit">
-                                            <span class="glyphicon glyphicon-search"></span>
-                                        </button>
+                                    <!-- 如果当前选择了商品的类型，仅在该类型下面进行搜索 -->
+                                    <input type="hidden" name="typeCode" value="${typeCode }" />
+                                    <div class="input-group">
+                                        <input type="text" name="title" value="${title}"
+                                               class="form-control" placeholder="搜索商品的标题" />
+                                        <div class="input-group-btn">
+                                            <button class="btn" type="submit">
+                                                <span class="glyphicon glyphicon-search"></span>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
                                 </td>
                                 <td>
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="添加商品">添加商品</button>
-                                   <span style="color: red;">${tip}</span>
+                                    <span style="color: red;">${tip}</span>
                                 </td>
                             </tr>
                             </tbody>
@@ -103,12 +103,12 @@
 
             <!-- 展示商品数据 -->
             <div class="row">
-         <c:forEach items="${articles }" var="a">
+                <c:forEach items="${articles }" var="a">
                     <div class="col-xs-6 col-lg-4">
             	<span class="thumbnail">
-                    <a class="label label-danger" href="<c:url value=""/>">删除</a>
-                    <a class="label label-success" href="<c:url value=""/>">修改</a>
-				    <a href="<c:url value=""/>">
+                    <a class="label label-danger" href="<c:url value="/list?method=deleteById&id=${a.id }&typeCode=${typeCode}&secondType=${secondType}&title=${title}"/>">删除</a>
+                    <a class="label label-success" href="<c:url value="/list?method=showUpdate&id=${a.id }&typeCode=${typeCode}&secondType=${secondType}&title=${title}"/>">修改</a>
+				    <a href="<c:url value="/list?method=preArticle&id=${a.id }"/>">
 				      <img src="<c:url value="/resources/images/article/${a.image }"/>" alt="...">
 		              <p style="height: 20px; overflow: hidden;">${a.title }</p>
 				    </a>
@@ -158,14 +158,14 @@
             <div class="modal-body ">
                 <div align="center">
                     <span style="color:red;"></span>
-                    <form name="articleform" class="form-horizontal" action="<c:url value=""/>" method="post" enctype="multipart/form-data">
+                    <form name="articleform" class="form-horizontal" action="<c:url value="/list?method=addArticle&typeCode=${typeCode}&secondType=${secondType}&title=${title} "/>" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label class="col-sm-3 control-label">类型编号：</label>
                             <div class="col-sm-4">
                                 <select class="form-control" name="code" id="addTypeCode">
                                     <c:forEach items="${articleTypes}" var="type">
                                         <option value="${type.code}">${type.name}</option>
-                                     </c:forEach>
+                                    </c:forEach>
                                 </select>
                             </div>
                         </div>
@@ -206,8 +206,8 @@
                             <label class="col-sm-3 control-label">上架日期：</label>
                             <div class="col-sm-4">
                                 <input  class="form-control" name="putawayDate" id="putawayDate"
-                                       style="width: 180px;"  type="text" class="Wdate"
-                                       onclick="WdatePicker({'lang':'zh-cn','skin':'whyGreen','dateFmt':'yyyy-MM-dd HH:mm:ss'})" size="50">
+                                        style="width: 180px;"  type="text" class="Wdate"
+                                        onclick="WdatePicker({'lang':'zh-cn','skin':'whyGreen','dateFmt':'yyyy-MM-dd HH:mm:ss'})" size="50">
                             </div>
                         </div>
 
@@ -248,15 +248,14 @@
 <script src="${pageContext.request.contextPath }/resources/bootstrap/js/bootstrap.js"></script>
 <script src="${pageContext.request.contextPath }/resources/js/taobao.js"></script>
 <script type="text/javascript">
-        // 等整个加载完成以后为二级类型绑定切换事件
-        $(function(){
-            $("#secondType").change(function(){
-                    window.location = "${pageContext.request.contextPath}/list?method=getAll&typeCode=${typeCode}&secondType="+this.value;
-            }) ;
-
-            // 把二级类型选中
-            $("#secondType").val("${secondType}");
-        });
+    // 等整个加载完成以后为二级类型绑定切换事件
+    $(function(){
+        $("#secondType").change(function(){
+            window.location = "${pageContext.request.contextPath}/list?method=getAll&typeCode=${typeCode}&secondType="+this.value;
+        }) ;
+        // 把二级类型选中
+        $("#secondType").val("${secondType}");
+    });
 </script>
 </body>
 </html>

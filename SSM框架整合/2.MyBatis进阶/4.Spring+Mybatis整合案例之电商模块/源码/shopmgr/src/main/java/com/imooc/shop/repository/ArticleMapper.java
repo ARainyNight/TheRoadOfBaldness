@@ -1,5 +1,9 @@
 package com.imooc.shop.repository;
 
+import com.imooc.shop.bean.Article;
+
+import java.util.List;
+
 /**
  * ArticleMapper 数据访问类
  * @author xlei @qq 251425887 @tel 13352818008
@@ -10,5 +14,5 @@ package com.imooc.shop.repository;
 public interface ArticleMapper {
 
 
-
+    List<Article> searchArticles();
 }

@@ -61,7 +61,7 @@ public class LoginServlet extends HttpServlet {
                 User user = (User) results.get("msg");
                 request.setAttribute(Constants.USER_SESSION , user);
                 // 请求跳转到主界面的servlet
-                response.sendRedirect(request.getContextPath()+"/list?method=getAll");
+                response.sendRedirect(request.getContextPath()+"/list");
             }else{
                 String msg = results.get("msg")+"";
                 request.setAttribute("msg",msg);
