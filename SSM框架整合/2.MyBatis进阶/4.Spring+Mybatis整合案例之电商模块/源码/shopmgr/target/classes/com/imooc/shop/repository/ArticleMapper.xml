@@ -9,6 +9,9 @@
     <resultMap id="articleResultMap" type="Article">
         <result column="putaway_date" property="putawayDate"></result>
         <result column="create_date" property="createDate"></result>
+        <!--查询出商品的类型：关联映射  N-1-->
+        <association property="articleType" javaType="ArticleType" 
+                     column="TYPE_CODE" select="com.imooc.shop.repository.ArticleTypeMapper.getTypeByCode"></association>
     </resultMap>
 
 

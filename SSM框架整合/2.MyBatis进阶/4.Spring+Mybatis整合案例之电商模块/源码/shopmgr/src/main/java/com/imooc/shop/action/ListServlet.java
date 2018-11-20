@@ -52,9 +52,28 @@ public class ListServlet extends HttpServlet {
                 case "preArticle":
                     preArticle();
                     break;
+                case "showUpdate":
+                    showUpdate();
+                    break;
             }
 
         } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void showUpdate() {
+        try {
+            String id = request.getParameter("id");
+            Article article = shopService.getArticleById(id);
+            //查询出所有的商品类型
+            List<ArticleType> types = shopService.getArticleTypes();
+            request.setAttribute("types", types);
+            request.setAttribute("article", article);
+            request.getRequestDispatcher("WEB-INF/jsp/updateArticle.jsp").forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -82,7 +101,7 @@ public class ListServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        request.getRequestDispatcher("/list?method=getAll").forward(request,response);
+        request.getRequestDispatcher("/list?method=getAll").forward(request, response);
 
     }
 

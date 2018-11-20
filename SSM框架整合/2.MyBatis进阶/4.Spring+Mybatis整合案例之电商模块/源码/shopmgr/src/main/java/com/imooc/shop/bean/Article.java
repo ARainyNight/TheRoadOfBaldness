@@ -20,7 +20,7 @@ public class Article implements java.io.Serializable{
 	private int storage;
 	private String image;
 	private String description;
-	private String typeCode;
+	private ArticleType articleType;
 	private java.util.Date createDate;
 	private String disabled;
 
@@ -85,12 +85,19 @@ public class Article implements java.io.Serializable{
 	public String getDescription(){
 		return this.description;
 	}
-	public void setTypeCode(String typeCode){
-		this.typeCode = typeCode;
+
+	public static long getSerialVersionUID() {
+		return serialVersionUID;
 	}
-	public String getTypeCode(){
-		return this.typeCode;
+
+	public ArticleType getArticleType() {
+		return articleType;
 	}
+
+	public void setArticleType(ArticleType articleType) {
+		this.articleType = articleType;
+	}
+
 	public void setCreateDate(java.util.Date createDate){
 		this.createDate = createDate;
 	}
