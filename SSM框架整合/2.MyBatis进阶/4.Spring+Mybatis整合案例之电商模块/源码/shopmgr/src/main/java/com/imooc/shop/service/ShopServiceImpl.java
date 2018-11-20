@@ -89,6 +89,17 @@ public class ShopServiceImpl implements ShopService {
     }
 
     @Override
+    public void deleteById(String id) {
+        articleMapper.deleteById(id);
+    }
+
+    @Override
+    public Article getArticleById(String id) {
+
+        return articleMapper.getArticleById(id);
+    }
+
+    @Override
     public List<Article> searchArticles(String typeCode, String secondType,
                                         String title, Pager pager) {
         //界面需要当前总共有多少条数据

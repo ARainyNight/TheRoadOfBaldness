@@ -17,4 +17,8 @@ public interface ShopService {
     List<Article> searchArticles(String typeCode, String secondType, String title, Pager pager);
 
     List<ArticleType> loadSecondTypes(String typeCode);
+
+    void deleteById(String id);
+
+    Article getArticleById(String id);
 }

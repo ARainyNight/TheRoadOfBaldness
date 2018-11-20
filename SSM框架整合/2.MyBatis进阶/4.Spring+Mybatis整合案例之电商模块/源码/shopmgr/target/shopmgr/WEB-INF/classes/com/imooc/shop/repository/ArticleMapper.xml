@@ -5,6 +5,13 @@
 
 <mapper namespace="com.imooc.shop.repository.ArticleMapper">
 
+    <!-- 配置一个结果集映射 -->
+    <resultMap id="articleResultMap" type="Article">
+        <result column="putaway_date" property="putawayDate"></result>
+        <result column="create_date" property="createDate"></result>
+    </resultMap>
+
+
     <sql id="pageWhere" >
         <where>
             <if test="typeCode!= null &amp;&amp; typeCode!=''">

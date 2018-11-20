@@ -23,8 +23,8 @@ public class ListServlet extends HttpServlet {
     // 定义业务层对象
     private ShopService shopService;
 
-    private HttpServletRequest request ;
-    private HttpServletResponse response ;
+    private HttpServletRequest request;
+    private HttpServletResponse response;
 
     @Override
     public void init() throws ServletException {
@@ -38,13 +38,19 @@ public class ListServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            this.request = req ;
-            this.response= resp ;
+            this.request = req;
+            this.response = resp;
             request.setCharacterEncoding("UTF-8");
             String method = request.getParameter("method");
-            switch (method){
+            switch (method) {
                 case "getAll":
                     getAll();
+                    break;
+                case "deleteById":
+                    deleteById();
+                    break;
+                case "preArticle":
+                    preArticle();
                     break;
             }
 
@@ -53,12 +59,39 @@ public class ListServlet extends HttpServlet {
         }
     }
 
+    private void preArticle() {
+        try {
+            String id = request.getParameter("id");
+            Article article = shopService.getArticleById(id);
+            request.setAttribute("article", article);
+            request.getRequestDispatcher("WEB-INF/jsp/preArticle.jsp").forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void deleteById() throws ServletException, IOException {
+        try {
+            String id = request.getParameter("id");
+            shopService.deleteById(id);
+            request.setAttribute("tip", "删除成功");
+        } catch (Exception e) {
+            request.setAttribute("tip", "删除失败");
+            e.printStackTrace();
+        }
+
+        request.getRequestDispatcher("/list?method=getAll").forward(request,response);
+
+    }
+
     private void getAll() throws ServletException, IOException {
 
         //考虑分页查询
-        Pager pager  = new Pager();
+        Pager pager = new Pager();
         String pageIndex = request.getParameter("pageIndex");
-        if (!StringUtils.isEmpty(pageIndex)){
+        if (!StringUtils.isEmpty(pageIndex)) {
             int pSize = Integer.valueOf(pageIndex);
             pager.setPageIndex(pSize);
         }
@@ -66,25 +99,25 @@ public class ListServlet extends HttpServlet {
         //接受二级类型编号
         String secondType = request.getParameter("secondType");
         String title = request.getParameter("title");
-        request.setAttribute("secondType",secondType);
-        request.setAttribute("title",title);
+        request.setAttribute("secondType", secondType);
+        request.setAttribute("title", title);
         //接受一级类型编号查询
         String typeCode = request.getParameter("typeCode");
 
         //根据一级类型查询对应的二级类型
-        if(!StringUtils.isEmpty(typeCode)){
+        if (!StringUtils.isEmpty(typeCode)) {
             List<ArticleType> secondTypes = shopService.loadSecondTypes(typeCode);
-            request.setAttribute("typeCode",typeCode);
-            request.setAttribute("secondTypes",secondTypes);
+            request.setAttribute("typeCode", typeCode);
+            request.setAttribute("secondTypes", secondTypes);
         }
 
         //1.查询所有的一级类型
         List<ArticleType> firstArticleTypes = shopService.loadFirstArticleTypes();
         //2.查询所有的商品信息
-        List<Article> articles = shopService.searchArticles(typeCode,secondType,title,pager);
-        request.setAttribute("firstArticleTypes",firstArticleTypes);
-        request.setAttribute("pager",pager);
-        request.setAttribute("articles",articles);
-        request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request,response);
+        List<Article> articles = shopService.searchArticles(typeCode, secondType, title, pager);
+        request.setAttribute("firstArticleTypes", firstArticleTypes);
+        request.setAttribute("pager", pager);
+        request.setAttribute("articles", articles);
+        request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request, response);
     }
 }
