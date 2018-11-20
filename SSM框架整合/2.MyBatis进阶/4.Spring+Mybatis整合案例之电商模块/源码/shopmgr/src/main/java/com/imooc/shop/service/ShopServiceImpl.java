@@ -7,35 +7,28 @@ import com.imooc.shop.repository.ArticleMapper;
 import com.imooc.shop.repository.ArticleTypeMapper;
 import com.imooc.shop.repository.UserMapper;
 import com.imooc.shop.utils.Pager;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/***
- *  ClassName : ShopServiceImpl
- *  Author    : lin
- *  Date      : 2018/11/19 10:22    
- *  Remark    : 
- */
-
 @Service("shopService")
 public class ShopServiceImpl implements ShopService {
 
-    //得到数据访问层对象
+    // 得到数据访问层对象
     @Resource
-    private ArticleTypeMapper articleTypeMapper ;
+    private ArticleTypeMapper  articleTypeMapper;
 
     @Resource
     private ArticleMapper articleMapper;
 
     @Resource
-    private UserMapper userMapper ;
-
+    private UserMapper userMapper;
 
     @Override
     public List<ArticleType> getArticleTypes() {
@@ -81,10 +74,9 @@ public class ShopServiceImpl implements ShopService {
         return articleTypes;
     }
 
-
     @Override
     public List<ArticleType> loadSecondTypes(String typeCode) {
-        List<ArticleType> articleTypes = articleTypeMapper.loadSecondTypes(typeCode+"%",typeCode.length()+4);
+        List<ArticleType> articleTypes = articleTypeMapper.loadSecondTypes(typeCode+"%" , typeCode.length()+4);
         return articleTypes;
     }
 
@@ -95,17 +87,30 @@ public class ShopServiceImpl implements ShopService {
 
     @Override
     public Article getArticleById(String id) {
-
         return articleMapper.getArticleById(id);
     }
 
     @Override
-    public List<Article> searchArticles(String typeCode, String secondType,
-                                        String title, Pager pager) {
-        //界面需要当前总共有多少条数据
-        //查询当前条件下总共有多少条数据
-        int count = articleMapper.count(typeCode,secondType,title);
-        pager.setTotalCount(count);
-        return articleMapper.searchArticles(typeCode,secondType,title,pager);
+    public void updateArticle(Article article) {
+        articleMapper.update(article);
     }
+
+    @Override
+    public void saveArticle(Article article) {
+        article.setCreateDate(new Date());
+        articleMapper.save(article);
+    }
+
+
+    @Override
+    public List<Article> searchArticles(String typeCode , String secondType
+            , String title,Pager pager) {
+        // 界面需要当前总共有多少条数据
+        // 查询当前条件下总共有多少条数据
+        int count = articleMapper.count(typeCode , secondType ,title);
+        pager.setTotalCount(count);
+        return articleMapper.searchArticles(typeCode , secondType ,title , pager);
+    }
+
+
 }

@@ -21,4 +21,8 @@ public interface ShopService {
     void deleteById(String id);
 
     Article getArticleById(String id);
+
+    void updateArticle(Article article);
+
+    void saveArticle(Article article);
 }

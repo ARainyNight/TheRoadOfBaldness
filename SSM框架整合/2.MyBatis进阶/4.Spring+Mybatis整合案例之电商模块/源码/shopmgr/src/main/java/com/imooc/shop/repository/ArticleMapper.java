@@ -11,26 +11,24 @@ import java.util.List;
 
 /**
  * ArticleMapper 数据访问类
- * @author xlei @qq 251425887 @tel 13352818008
- * @Email dlei0009@163.com
- * @date 2018-11-19 09:41:26
- * @version 1.0
  */
 public interface ArticleMapper {
 
-    List<Article> searchArticles(@Param("typeCode") String typeCode,
-                                 @Param("secondType") String secondTyp,
-                                 @Param("title") String title,
-                                 @Param("pager") Pager pager);
+    List<Article> searchArticles(@Param("typeCode") String typeCode ,
+                                 @Param("secondType") String secondType , @Param("title") String title,
+                                 @Param("pager")Pager pager);
 
-    int count(@Param("typeCode") String typeCode,
-              @Param("secondType") String secondTyp,
-              @Param("title") String title);
+    int count(@Param("typeCode") String typeCode ,
+              @Param("secondType") String secondType , @Param("title") String title);
 
-    @Delete("delete from ec_article where id = #{id}")
-    void deleteById(@Param("id") String id);
+    @Delete("delete from ec_article where id = #{xxxx}")
+    void deleteById(String id);
 
-    @Select("select * from ec_article where id = #{id}")
+    @Select("select * from ec_article where id = #{dsafa}")
     @ResultMap("articleResultMap")
-    Article getArticleById(@Param("id") String id);
+    Article getArticleById(String id);
+
+    void update(Article article);
+
+    void save(Article article);
 }
