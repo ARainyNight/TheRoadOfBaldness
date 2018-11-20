@@ -39,7 +39,7 @@ public class ListServlet extends HttpServlet {
         try {
             this.request = req ;
             this.response= resp ;
-
+            request.setCharacterEncoding("UTF-8");
             String method = request.getParameter("method");
             switch (method){
                 case "getAll":
@@ -53,19 +53,25 @@ public class ListServlet extends HttpServlet {
     }
 
     private void getAll() throws ServletException, IOException {
+        //接受二级类型编号
+        String secondType = request.getParameter("secondType");
+        String title = request.getParameter("title");
+        request.setAttribute("secondType",secondType);
+        request.setAttribute("title",title);
         //接受一级类型编号查询
         String typeCode = request.getParameter("typeCode");
 
         //根据一级类型查询对应的二级类型
         if(!StringUtils.isEmpty(typeCode)){
             List<ArticleType> secondTypes = shopService.loadSecondTypes(typeCode);
+            request.setAttribute("typeCode",typeCode);
             request.setAttribute("secondTypes",secondTypes);
         }
 
         //1.查询所有的一级类型
         List<ArticleType> firstArticleTypes = shopService.loadFirstArticleTypes();
         //2.查询所有的商品信息
-        List<Article> articles = shopService.searchArticles(typeCode);
+        List<Article> articles = shopService.searchArticles(typeCode,secondType,title);
         request.setAttribute("firstArticleTypes",firstArticleTypes);
         request.setAttribute("articles",articles);
         request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request,response);

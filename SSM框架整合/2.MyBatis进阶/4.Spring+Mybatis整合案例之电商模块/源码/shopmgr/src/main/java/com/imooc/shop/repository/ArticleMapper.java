@@ -14,6 +14,6 @@ import java.util.List;
  */
 public interface ArticleMapper {
 
-
-    List<Article> searchArticles(@Param("typeCode") String typeCode);
+    List<Article> searchArticles(@Param("typeCode") String typeCode,@Param("secondType") String secondTyp,
+                                 @Param("title") String title);
 }
