@@ -6,6 +6,7 @@ import com.imooc.shop.bean.User;
 import com.imooc.shop.repository.ArticleMapper;
 import com.imooc.shop.repository.ArticleTypeMapper;
 import com.imooc.shop.repository.UserMapper;
+import com.imooc.shop.utils.Pager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -88,7 +89,12 @@ public class ShopServiceImpl implements ShopService {
     }
 
     @Override
-    public List<Article> searchArticles(String typeCode,String secondType,String title) {
-        return articleMapper.searchArticles(typeCode,secondType,title);
+    public List<Article> searchArticles(String typeCode, String secondType,
+                                        String title, Pager pager) {
+        //界面需要当前总共有多少条数据
+        //查询当前条件下总共有多少条数据
+        int count = articleMapper.count(typeCode,secondType,title);
+        pager.setTotalCount(count);
+        return articleMapper.searchArticles(typeCode,secondType,title,pager);
     }
 }

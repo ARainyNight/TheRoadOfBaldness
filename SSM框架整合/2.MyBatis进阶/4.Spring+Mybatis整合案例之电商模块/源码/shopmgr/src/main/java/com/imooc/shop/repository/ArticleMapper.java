@@ -1,6 +1,7 @@
 package com.imooc.shop.repository;
 
 import com.imooc.shop.bean.Article;
+import com.imooc.shop.utils.Pager;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -14,6 +15,12 @@ import java.util.List;
  */
 public interface ArticleMapper {
 
-    List<Article> searchArticles(@Param("typeCode") String typeCode,@Param("secondType") String secondTyp,
-                                 @Param("title") String title);
+    List<Article> searchArticles(@Param("typeCode") String typeCode,
+                                 @Param("secondType") String secondTyp,
+                                 @Param("title") String title,
+                                 @Param("pager") Pager pager);
+
+    int count(@Param("typeCode") String typeCode,
+              @Param("secondType") String secondTyp,
+              @Param("title") String title);
 }

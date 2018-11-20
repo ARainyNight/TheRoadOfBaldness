@@ -3,6 +3,7 @@ package com.imooc.shop.action;
 import com.imooc.shop.bean.Article;
 import com.imooc.shop.bean.ArticleType;
 import com.imooc.shop.service.ShopService;
+import com.imooc.shop.utils.Pager;
 import org.springframework.util.StringUtils;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
@@ -53,6 +54,15 @@ public class ListServlet extends HttpServlet {
     }
 
     private void getAll() throws ServletException, IOException {
+
+        //考虑分页查询
+        Pager pager  = new Pager();
+        String pageIndex = request.getParameter("pageIndex");
+        if (!StringUtils.isEmpty(pageIndex)){
+            int pSize = Integer.valueOf(pageIndex);
+            pager.setPageIndex(pSize);
+        }
+
         //接受二级类型编号
         String secondType = request.getParameter("secondType");
         String title = request.getParameter("title");
@@ -71,8 +81,9 @@ public class ListServlet extends HttpServlet {
         //1.查询所有的一级类型
         List<ArticleType> firstArticleTypes = shopService.loadFirstArticleTypes();
         //2.查询所有的商品信息
-        List<Article> articles = shopService.searchArticles(typeCode,secondType,title);
+        List<Article> articles = shopService.searchArticles(typeCode,secondType,title,pager);
         request.setAttribute("firstArticleTypes",firstArticleTypes);
+        request.setAttribute("pager",pager);
         request.setAttribute("articles",articles);
         request.getRequestDispatcher("/WEB-INF/jsp/list.jsp").forward(request,response);
     }
