@@ -1,6 +1,7 @@
 package com.imooc.shop.repository;
 
 import com.imooc.shop.bean.Article;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,5 +15,5 @@ import java.util.List;
 public interface ArticleMapper {
 
 
-    List<Article> searchArticles();
+    List<Article> searchArticles(@Param("typeCode") String typeCode);
 }
