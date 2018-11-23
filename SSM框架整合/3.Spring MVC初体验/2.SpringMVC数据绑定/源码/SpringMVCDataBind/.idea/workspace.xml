@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7c3c5d-d0b8-49ce-b8e2-9e6a84919768" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/entity/CourseSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.8.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/controller/DataBindController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/controller/DataBindController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/dao/CourseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/entity/CourseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/entity/CourseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../新建文本文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../新建文本文档.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/json.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="312">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -195,24 +188,6 @@
               <item name="SpringMVCDataBind" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMVCDataBind" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMVCDataBind" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="imooc" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMVCDataBind" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMVCDataBind" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -240,7 +215,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542942049873" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542942253618" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -276,7 +251,7 @@
       <workItem from="1542851848479" duration="2038000" />
       <workItem from="1542882847604" duration="1607000" />
       <workItem from="1542893233402" duration="2753000" />
-      <workItem from="1542933502706" duration="5718000" />
+      <workItem from="1542933502706" duration="6309000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1542853696280</created>
@@ -289,11 +264,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12116000" />
+    <option name="totallyTimeSpent" value="12707000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1552" height="832" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25970548" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -495,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/json.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="312">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
