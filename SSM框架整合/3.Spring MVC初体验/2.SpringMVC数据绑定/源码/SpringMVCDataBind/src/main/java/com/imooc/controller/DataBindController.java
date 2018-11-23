@@ -1,9 +1,10 @@
 package com.imooc.controller;
 
-import com.imooc.dao.CourseDao;
+import com.imooc.dao.CourseDAO;
 import com.imooc.entity.Course;
 import com.imooc.entity.CourseList;
 import com.imooc.entity.CourseMap;
+import com.imooc.entity.CourseSet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +24,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class DataBindController {
 
     @Autowired
-    private CourseDao courseDao;
+    private CourseDAO courseDAO;
 
     @RequestMapping(value = "/baseType")
     @ResponseBody
@@ -31,59 +32,67 @@ public class DataBindController {
         return "id:"+id;
     }
 
-
     @RequestMapping(value = "/packageType")
     @ResponseBody
     public String packageType(@RequestParam(value = "id") Integer id){
-        return "id:"+ id ;
+        return "id:"+id;
     }
-
 
     @RequestMapping(value = "/arrayType")
     @ResponseBody
     public String arrayType(String[] name){
-          StringBuffer sbf = new StringBuffer();
-        for (String item:
-             name) {
+        StringBuffer sbf = new StringBuffer();
+        for (String item:name){
             sbf.append(item).append(" ");
         }
         return sbf.toString();
     }
 
-
-    @RequestMapping(value = "pojoType")
+    @RequestMapping(value = "/pojoType")
     public ModelAndView pojoType(Course course){
-        courseDao.add(course);
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index");
-        modelAndView.addObject("courses",courseDao.getAll());
-        return modelAndView ;
+        courseDAO.add(course);
+       return model();
     }
 
-    @RequestMapping(value = "listType")
+    @RequestMapping(value = "/listType")
     public ModelAndView listType(CourseList courseList){
-        for (Course course:
-             courseList.getCourses()) {
-            courseDao.add(course);
+        for(Course course:courseList.getCourses()){
+            courseDAO.add(course);
         }
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index");
-        modelAndView.addObject("courses",courseDao.getAll());
-        return modelAndView;
+       return model();
     }
 
-    @RequestMapping(value = "mapType")
-    public ModelAndView mapTyep(CourseMap courseMap){
-        for (String key:
-             courseMap.getCourses().keySet()) {
+    @RequestMapping(value = "/mapType")
+    public ModelAndView mapType(CourseMap courseMap){
+        for(String key:courseMap.getCourses().keySet()){
             Course course = courseMap.getCourses().get(key);
-            courseDao.add(course);
+            courseDAO.add(course);
         }
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("index");
-        modelAndView.addObject("courses",courseDao.getAll());
-        return modelAndView;
+      return model();
     }
 
+    @RequestMapping(value = "/setType")
+    public ModelAndView setType(CourseSet courseSet){
+        for (Course course:courseSet.getCourses()){
+            courseDAO.add(course);
+        }
+       return model();
+    }
+
+    @RequestMapping(value = "/jsonType")
+    @ResponseBody
+    public Course jsonType(@RequestBody Course course){
+        course.setPrice(course.getPrice()+100);
+        return  course ;
+    }
+
+
+
+    private ModelAndView model(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        modelAndView.addObject("courses",courseDAO.getAll());
+        return modelAndView;
+    }
 
 }

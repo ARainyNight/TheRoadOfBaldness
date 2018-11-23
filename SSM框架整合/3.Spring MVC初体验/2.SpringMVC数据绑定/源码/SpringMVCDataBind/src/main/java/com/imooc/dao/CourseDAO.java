@@ -15,14 +15,16 @@ import java.util.Map;
  */
 
 @Repository
-public class CourseDao {
-    private Map<Integer, Course> courses = new HashMap<>();
+public class CourseDAO {
+
+    private Map<Integer,Course> courses = new HashMap<Integer, Course>();
 
     public void add(Course course){
         courses.put(course.getId(),course);
     }
 
     public Collection<Course> getAll(){
-        return  courses.values();
+        return courses.values();
     }
+
 }
