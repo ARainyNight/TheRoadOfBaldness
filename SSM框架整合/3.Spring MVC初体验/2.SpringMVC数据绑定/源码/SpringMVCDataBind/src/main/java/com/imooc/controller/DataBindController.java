@@ -3,6 +3,7 @@ package com.imooc.controller;
 import com.imooc.dao.CourseDao;
 import com.imooc.entity.Course;
 import com.imooc.entity.CourseList;
+import com.imooc.entity.CourseMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -55,8 +56,7 @@ public class DataBindController {
         courseDao.add(course);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
-        modelAndView.addObject(courseDao.getAll());
-
+        modelAndView.addObject("courses",courseDao.getAll());
         return modelAndView ;
     }
 
@@ -68,8 +68,22 @@ public class DataBindController {
         }
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
-        modelAndView.addObject(courseDao.getAll());
+        modelAndView.addObject("courses",courseDao.getAll());
         return modelAndView;
     }
+
+    @RequestMapping(value = "mapType")
+    public ModelAndView mapTyep(CourseMap courseMap){
+        for (String key:
+             courseMap.getCourses().keySet()) {
+            Course course = courseMap.getCourses().get(key);
+            courseDao.add(course);
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("index");
+        modelAndView.addObject("courses",courseDao.getAll());
+        return modelAndView;
+    }
+
 
 }
