@@ -1,0 +1,23 @@
+
+debug: false
+logging:
+  level:
+    root: info
+  file: /local/user/app-prd.log
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://155.32.55.88:3307/prd
+    username: root1
+    password: root1
+
+mall:
+  config:
+    name: 小康商城
+    description: 这是小罗的飞机
+    hot-sales: 20
+    show-advert: true
+
+server:
+  port: 80

@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: prd
+
+
+#debug: true
+#logging:
+#  level:
+#    root: info
+#  file: e:/myspringboot.log
+#
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/test
+#    username: root
+#    password: 123456
+#
+#mall:
+#  config:
+#    name: 小罗商城
+#    description: 这是小罗的飞机
+#    hot-sales: 20
+#    show-advert: true
