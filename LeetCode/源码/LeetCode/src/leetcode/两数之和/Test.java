@@ -1,4 +1,4 @@
-package com.两数之和;
+package leetcode.两数之和;
 
 /***
  *  ClassName : Test
