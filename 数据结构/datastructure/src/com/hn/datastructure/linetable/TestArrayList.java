@@ -18,8 +18,13 @@ public class TestArrayList {
         list.add(678);
         list.add(789);
 
+
+        list.add(3,666);
+
         System.out.println(list.size());
         System.out.println(list.isEmpty());
+        System.out.println(list.get(3));
 
+        System.out.println(list);
     }
 }
