@@ -62,6 +62,7 @@
   - [RESTful入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/3.Spring%20MVC%E5%88%9D%E4%BD%93%E9%AA%8C/3.RESTful%E5%85%A5%E9%97%A8)
   - [SpringMVC拦截器](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/3.Spring%20MVC%E5%88%9D%E4%BD%93%E9%AA%8C/4.SpringMVC%E6%8B%A6%E6%88%AA%E5%99%A8)
   - [SpringBoot入门](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/3.Spring%20MVC%E5%88%9D%E4%BD%93%E9%AA%8C/5.SpringBoot%E5%85%A5%E9%97%A8)
+  - [SSM整合开发OA系统](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/3.Spring%20MVC%E5%88%9D%E4%BD%93%E9%AA%8C/6.SSM%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91%E5%8A%9E%E5%85%AC%E7%B3%BB%E7%BB%9F%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97)
 
 ---
 
