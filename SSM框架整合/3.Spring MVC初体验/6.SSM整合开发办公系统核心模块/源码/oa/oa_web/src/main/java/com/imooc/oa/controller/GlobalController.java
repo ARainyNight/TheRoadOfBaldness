@@ -57,5 +57,47 @@ public class GlobalController {
         return "self";
     }
 
+    /**
+     * 退出登录
+     * @param session
+     * @return
+     */
+    @RequestMapping("/quit")
+    public String quit(HttpSession session){
+        session.setAttribute("employee",null);
+        return "redirect:to_login";
+    }
+
+    /**
+     * 去修改密码
+     * @return
+     */
+    @RequestMapping("/to_change_password")
+    public String toChangePassword(){
+        return "change_password";
+    }
+
+    /**
+     * 修改密码
+     * @param session
+     * @param old
+     * @param new1
+     * @param new2
+     * @return
+     */
+    @RequestMapping("/change_password")
+    public String changePassword(HttpSession session, @RequestParam String old, @RequestParam String new1 ,@RequestParam String new2){
+        Employee employee = (Employee)session.getAttribute("employee");
+        if(employee.getPassword().equals(old)){
+            if(new1.equals(new2)){
+                employee.setPassword(new1);
+                globalBiz.changePassword(employee);
+                return "redirect:self";
+            }
+        }
+        return "redirect:to_change_password";
+    }
+
+
 
 }
