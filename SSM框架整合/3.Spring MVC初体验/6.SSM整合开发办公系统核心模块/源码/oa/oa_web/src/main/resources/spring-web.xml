@@ -23,4 +23,13 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+
+    <!--拦截器定义-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.imooc.oa.global.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
