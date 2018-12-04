@@ -22,7 +22,8 @@
                                     <i class="fa fa-trash"></i>
                                 </button>
                                 <button type="button" class="btn btn-default light">
-                                    <i class="fa fa-plus" onclick="javascript:window.location.href='/claim_voucher/to_add';"></i>
+                                    <i class="fa fa-plus"
+                                       onclick="javascript:window.location.href='/claim_voucher/to_add';"></i>
                                 </button>
                             </div>
                         </div>
@@ -70,13 +71,13 @@
                                 <td>
                                     <c:if test="${cv.status==Contant.CLAIMVOUCHER_CREATED || cv.status==Contant.CLAIMVOUCHER_BACK}">
                                         <a href="/claim_voucher/to_update?id=${cv.id}">修改</a>
-                                        <a href="/claim_voucher/detail?id=${cv.id}">提交</a>
+                                        <a href="/claim_voucher/submit?id=${cv.id}">提交</a>
                                     </c:if>
                                     <c:if test="${cv.status==Contant.CLAIMVOUCHER_SUBMIT || cv.status==Contant.CLAIMVOUCHER_RECHECK}">
-                                        <a href="/claim_voucher/detail?id=${cv.id}">审核</a>
+                                        <a href="/claim_voucher/to_check?id=${cv.id}">审核</a>
                                     </c:if>
                                     <c:if test="${cv.status==Contant.CLAIMVOUCHER_APPROVED}">
-                                        <a href="/claim_voucher/detail?id=${cv.id}">打款</a>
+                                        <a href="/claim_voucher/to_check?id=${cv.id}">打款</a>
                                     </c:if>
                                     <a href="/claim_voucher/detail?id=${cv.id}">详细信息</a>
                                 </td>

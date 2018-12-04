@@ -22,7 +22,8 @@
                                     <i class="fa fa-trash"></i>
                                 </button>
                                 <button type="button" class="btn btn-default light">
-                                    <i class="fa fa-plus" onclick="javascript:window.location.href='/department/to_add';"></i>
+                                    <i class="fa fa-plus"
+                                       onclick="javascript:window.location.href='/department/to_add';"></i>
                                 </button>
                             </div>
                         </div>

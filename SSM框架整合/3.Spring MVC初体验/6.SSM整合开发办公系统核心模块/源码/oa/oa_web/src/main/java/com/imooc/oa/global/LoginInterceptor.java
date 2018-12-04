@@ -19,12 +19,12 @@ public class LoginInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
 
-        String url  = httpServletRequest.getRequestURI();
-        if (url.toLowerCase().indexOf("login") >=0){
+        String url = httpServletRequest.getRequestURI();
+        if (url.toLowerCase().indexOf("login") >= 0) {
             return true;
         }
-        HttpSession session= httpServletRequest.getSession();
-        if (session.getAttribute("employee")!=null){
+        HttpSession session = httpServletRequest.getSession();
+        if (session.getAttribute("employee") != null) {
             return true;
         }
         httpServletResponse.sendRedirect("/to_login");

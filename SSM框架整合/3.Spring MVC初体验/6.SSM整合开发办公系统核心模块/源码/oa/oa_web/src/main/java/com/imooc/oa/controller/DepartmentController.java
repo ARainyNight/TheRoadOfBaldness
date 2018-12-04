@@ -26,6 +26,7 @@ public class DepartmentController {
 
     /**
      * 向页面传递所有部门信息
+     *
      * @param map
      * @return
      */
@@ -37,35 +38,36 @@ public class DepartmentController {
 
     /**
      * 添加部门信息
+     *
      * @param map
      * @return
      */
     @RequestMapping("/to_add")
-    public String toAdd(Map<String, Object> map){
-        map.put("department",new Department());
+    public String toAdd(Map<String, Object> map) {
+        map.put("department", new Department());
         return "department_add";
     }
 
     @RequestMapping("/add")
-    public String add(Department department){
+    public String add(Department department) {
         departmentBiz.add(department);
         return "redirect:list";
     }
 
-    @RequestMapping(value = "/to_update",params = "sn")
-    public String toUpdate(String sn, Map<String, Object> map){
-        map.put("department",departmentBiz.get(sn));
+    @RequestMapping(value = "/to_update", params = "sn")
+    public String toUpdate(String sn, Map<String, Object> map) {
+        map.put("department", departmentBiz.get(sn));
         return "department_update";
     }
 
     @RequestMapping("/update")
-    public String update(Department department){
+    public String update(Department department) {
         departmentBiz.edit(department);
         return "redirect:list";
     }
 
-    @RequestMapping(value = "/remove",params = "sn")
-    public String remove(String sn){
+    @RequestMapping(value = "/remove", params = "sn")
+    public String remove(String sn) {
         departmentBiz.remove(sn);
         return "redirect:list";
     }

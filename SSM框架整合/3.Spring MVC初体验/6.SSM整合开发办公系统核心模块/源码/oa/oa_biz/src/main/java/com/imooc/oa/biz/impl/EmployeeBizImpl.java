@@ -21,7 +21,7 @@ public class EmployeeBizImpl implements EmployeeBiz {
 
     @Qualifier("employeeDao")
     @Autowired
-    private EmployeeDao employeeDao ;
+    private EmployeeDao employeeDao;
 
     public void add(Employee employee) {
         employee.setPassword("000000");

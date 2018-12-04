@@ -4,7 +4,7 @@ import com.imooc.oa.entity.Employee;
 
 public interface GlobalBiz {
 
-    Employee login(String sn,String password);
+    Employee login(String sn, String password);
 
     void changePassword(Employee employee);
 }
