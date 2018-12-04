@@ -11,7 +11,6 @@
 
     <import resource="spring-biz.xml"/>
 
-    <!--开启自动扫描-->
     <context:component-scan base-package="com.imooc.oa.controller"/>
     <mvc:annotation-driven/>
 
@@ -23,8 +22,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-
-    <!--拦截器定义-->
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
