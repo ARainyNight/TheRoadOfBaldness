@@ -47,4 +47,19 @@ public class ClaimVoucherController {
         map.put("records", claimVoucherBiz.getRecords(id));
         return "claim_voucher_detail";
     }
+
+    @RequestMapping("/self")
+    public String self(HttpSession session, Map<String, Object> map) {
+        Employee employee = (Employee) session.getAttribute("employee");
+        map.put("list",claimVoucherBiz.getForSelf(employee.getSn()));
+        return "claim_voucher_self";
+    }
+
+    @RequestMapping("/deal")
+    public String deal(HttpSession session, Map<String, Object> map) {
+        Employee employee = (Employee) session.getAttribute("employee");
+        map.put("list",claimVoucherBiz.getForDeal(employee.getSn()));
+        return "claim_voucher_deal";
+    }
+
 }
