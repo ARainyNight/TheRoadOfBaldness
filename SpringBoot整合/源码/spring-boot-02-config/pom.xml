@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hn</groupId>
-    <artifactId>spring-boot-01-helloworld-quick</artifactId>
+    <artifactId>spring-boot-02-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>spring-boot-01-helloworld-quick</name>
+    <name>spring-boot-02-config</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,11 +27,17 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!--SpringBoot进行单元测试的模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+       <!--导入配置文件处理器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 

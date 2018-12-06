@@ -1,0 +1,16 @@
+#配置端口号
+server:
+  port: 8081
+
+#person:
+#  lastName: zhangsan
+#  age: 18
+#  boss: false
+#  birth: 2018/4/4
+#  maps: {k1: v1, k2: v2}
+#  lists:
+#    - lisi
+#    - zhaoliu
+#  dog:
+#    name: 小狗
+#    age: 2
