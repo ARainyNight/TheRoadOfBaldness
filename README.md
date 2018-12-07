@@ -65,7 +65,5 @@
   - [SSM整合开发OA系统](https://github.com/ARainyNight/TheRoadOfBaldness/tree/master/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88/3.Spring%20MVC%E5%88%9D%E4%BD%93%E9%AA%8C/6.SSM%E6%95%B4%E5%90%88%E5%BC%80%E5%8F%91%E5%8A%9E%E5%85%AC%E7%B3%BB%E7%BB%9F%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97)
 
 ---
-
-###Spring Boot整合
-
+###SpringBoot整合
 + [学习笔记](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/SpringBoot%E6%95%B4%E5%90%88/Spring%20Boot%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF-%E7%AC%94%E8%AE%B0.pdf)

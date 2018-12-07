@@ -2,6 +2,7 @@ package com.hn.config.bean;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -23,6 +24,7 @@ import java.util.Map;
  * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能
  *
  */
+//@PropertySource(value = {"classpath:person.properties"})
 @Component
 @ConfigurationProperties(prefix = "person")
 public class Person {
