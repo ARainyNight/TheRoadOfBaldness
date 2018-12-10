@@ -4,7 +4,7 @@ package com;
  *  ClassName : Run
  *  Author    : lin
  *  Date      : 2018/12/10 17:28    
- *  Remark    : 
+ *  Remark    : isAlive方法
  */
 
 public class Run {
