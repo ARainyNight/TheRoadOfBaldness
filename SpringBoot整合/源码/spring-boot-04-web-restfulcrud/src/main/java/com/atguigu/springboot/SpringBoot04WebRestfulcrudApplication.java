@@ -1,4 +1,4 @@
-package com.atguigu.springboot04webrestfulcrud;
+package com.atguigu.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

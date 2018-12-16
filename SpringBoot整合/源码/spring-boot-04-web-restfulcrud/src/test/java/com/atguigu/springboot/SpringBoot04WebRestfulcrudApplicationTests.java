@@ -1,4 +1,4 @@
-package com.atguigu.springboot04webrestfulcrud;
+package com.atguigu.springboot;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
