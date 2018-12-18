@@ -9,7 +9,7 @@ package com;
 
 public class StringMethodDemo {
 
-    public static void method_is(){
+    public static void method_is() {
         String str = "ArrayDemo.java";
 
         System.out.println(str.startsWith("Array"));
@@ -17,7 +17,7 @@ public class StringMethodDemo {
         System.out.println(str.contains("Demo"));
     }
 
-    public static void method_get(){
+    public static void method_get() {
         String str = "abcdegkkdkkpf";
 
         System.out.println(str.length());
@@ -26,14 +26,14 @@ public class StringMethodDemo {
         System.out.println(str.charAt(4));
 
         //根据字符获取索引
-        System.out.println(str.indexOf('k',7));   //如果没找到返回-1
+        System.out.println(str.indexOf('k', 7));   //如果没找到返回-1
 
         //反向索引一个字符出现位置
         System.out.println(str.lastIndexOf("k"));
     }
 
 
-    public static void main(String []args){
+    public static void main(String[] args) {
 //        String s1 = "abc";
 //        String s2 = new String("abc");
 //        String s3 = "abc";

@@ -1,5 +1,11 @@
 
 
+### Java基础
+
++ [String](https://github.com/ARainyNight/TheRoadOfBaldness/blob/master/java%E5%9F%BA%E7%A1%80/String/String.md)
+
+---
+
  ### Web入门
 
 + 网页入门
