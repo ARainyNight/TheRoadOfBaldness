@@ -41,7 +41,7 @@ public class StringBufferDemo {
 //        stringBuffer.delete(0,stringBuffer.length());
 //        System.out.println(stringBuffer.toString()+"..");
 
-        method_update();
-
+//        method_update();
+        System.out.println(Integer.MAX_VALUE);
     }
 }
