@@ -2,6 +2,7 @@ package com.hn.demo;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /***
  *  ClassName : Demo2
@@ -13,7 +14,23 @@ import java.util.ArrayList;
 public class Demo2 {
 
     public static void main(String[] args) {
-        demo1();
+//        demo1();
+        method_get();
+    }
+
+    public static void method_get() {
+        ArrayList a1 = new ArrayList();
+        a1.add("java1");
+        a1.add("java2");
+        a1.add("java3");
+        a1.add("java4");
+
+//        System.out.println(a1.get(2));
+
+        Iterator it = a1.iterator();  //获取迭代器，用于取出集合中的元素
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
     }
 
     public static void demo1() {

@@ -32,7 +32,7 @@ public class CollectionDemo {
 //        System.out.println(al);
 
         //判断元素
-        System.out.println("java03手否存在"+al.contains("java03"));
+        System.out.println("java03是否存在"+al.contains("java03"));
         System.out.println("是否为空"+ al.isEmpty());
 
 
