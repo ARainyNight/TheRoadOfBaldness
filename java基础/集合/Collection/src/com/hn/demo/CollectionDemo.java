@@ -38,6 +38,8 @@ public class CollectionDemo {
 
         //获取长度
         System.out.println(al.size());
+
+        System.out.println(al);
     }
 
 }
