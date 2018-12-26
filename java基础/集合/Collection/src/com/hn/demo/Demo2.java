@@ -14,8 +14,8 @@ import java.util.Iterator;
 public class Demo2 {
 
     public static void main(String[] args) {
-//        demo1();
-        method_get();
+        demo1();
+     //   method_get();
     }
 
     public static void method_get() {
@@ -52,5 +52,11 @@ public class Demo2 {
 
         System.out.println(a1);
         System.out.println(a2);
+
+
+
+        for (Iterator i = a2.iterator(); i.hasNext() ;){
+            System.out.println(i.next());
+        }
     }
 }
