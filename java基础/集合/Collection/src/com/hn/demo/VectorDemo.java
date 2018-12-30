@@ -1,5 +1,6 @@
 package com.hn.demo;
 
+import java.util.Enumeration;
 import java.util.Vector;
 
 /***
@@ -18,5 +19,11 @@ public class VectorDemo {
         v.add("java03");
         v.add("java04");
         v.add("java05");
+
+        Enumeration en = v.elements();
+
+        while (en.hasMoreElements()){
+            System.out.println(en.nextElement());
+        }
     }
 }
