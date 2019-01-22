@@ -13,12 +13,18 @@ public class LinkedListDemo {
     public static void main(String []args){
         LinkedList link  = new LinkedList();
 
-        link.addFirst("java01");
-        link.addFirst("java02");
-        link.addFirst("java03");
-        link.addFirst("java04");
+        link.addLast("java01");
+        link.addLast("java02");
+        link.addLast("java03");
+        link.addLast("java04");
 
-        System.out.println(link);
+//        System.out.println(link);
+//
+//        System.out.println(link.getFirst());
+//        System.out.println(link.getLast());
 
+        System.out.println(link.removeFirst());
+
+        System.out.println("size="+link.size());
     }
 }
