@@ -40,3 +40,9 @@
 
 + 基本选择器是jQuery最基础也是最常用的选择器表达式
 + ![](F:\JAVA\秃头之路\web入门\3.javaweb基础进阶\7.JQuery与Ajax入门\img\基本选择器.png)
+
+#### 层叠选择器
+
++ 层叠选择器是根据元素的位置关系来获取元素的选择器表达式
++ ![](F:\JAVA\秃头之路\web入门\3.javaweb基础进阶\7.JQuery与Ajax入门\img\层叠选择器.png)
+

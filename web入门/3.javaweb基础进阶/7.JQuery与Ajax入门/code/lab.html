@@ -69,14 +69,17 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
 	<script  type="text/javascript" >
+		$('.myclass').addClass('highlight');
+		// $('#btnSelect').addClass("highlight");
+		// $('#marital_status').addClass("highlight");
 		document.getElementById("btnSelect").onclick =function(){
 			var selector= document.getElementById("txtSelector").value;
 			//jquery的选择器方法
 			//选择器表达式
-			// $("*").removeClass('highlight');
-			// $(selector).addClass('highlight');
+			$("*").removeClass('highlight');
+			$(selector).addClass('highlight');
 			// $("#marital_status").addClass('highlight');
-			$("div").addClass('highlight')
+			// $("div").addClass('highlight')
 		}
 	</script>
 </body>
