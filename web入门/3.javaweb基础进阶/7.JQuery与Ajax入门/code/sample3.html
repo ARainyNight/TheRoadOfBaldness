@@ -69,22 +69,16 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
 	<script  type="text/javascript" >
-		/**
-		 * id选择器使用"#id值"进行选择
-		 * css选择器使用".css类名"进行选择
-		 */
-		$('.myclass').addClass('highlight');
-		// $('#btnSelect').addClass("highlight");
-		// $('#marital_status').addClass("highlight");
-		document.getElementById("btnSelect").onclick =function(){
-			var selector= document.getElementById("txtSelector").value;
-			//jquery的选择器方法
-			//选择器表达式
-			$("*").removeClass('highlight');
-			$(selector).addClass('highlight');
-			// $("#marital_status").addClass('highlight');
-			// $("div").addClass('highlight')
-		}
+		$("input[name='uname']").val("administrator");
+		var name =$("input[name='uname']").val();
+		alert(name);
+
+		//text与html方法最大的区别在于对于文本中的html标签是否进行转义
+		//$("span.myclass").text("<b>锄禾日当午，汗滴禾下土</b>");
+		$("span.myclass").html("<b>锄禾日当午，汗滴禾下土</b>");
+
+		var vspan = $("span.myclass").html();
+		alert(vspan);
 	</script>
 </body>
 </html>

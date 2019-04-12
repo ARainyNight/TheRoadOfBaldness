@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>jQuery实验室</title>
+<title>操作元素属性</title>
 
 <style>
 .myclass {
@@ -24,7 +24,7 @@
 
 <body>
 	<div class="section">
-		<h2>jQuery选择器实验室</h2>
+		<h2>操作元素属性</h2>
 		<input style="height: 24px" id="txtSelector" />
 		<button id="btnSelect" style="height: 30px">选择</button>
 		<hr />
@@ -69,22 +69,13 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
 	<script  type="text/javascript" >
-		/**
-		 * id选择器使用"#id值"进行选择
-		 * css选择器使用".css类名"进行选择
-		 */
-		$('.myclass').addClass('highlight');
-		// $('#btnSelect').addClass("highlight");
-		// $('#marital_status').addClass("highlight");
-		document.getElementById("btnSelect").onclick =function(){
-			var selector= document.getElementById("txtSelector").value;
-			//jquery的选择器方法
-			//选择器表达式
-			$("*").removeClass('highlight');
-			$(selector).addClass('highlight');
-			// $("#marital_status").addClass('highlight');
-			// $("div").addClass('highlight')
-		}
+		var href_attr= $("a[href*='163']").attr("href");
+		alert(href_attr);
+		$("a[href*='163']").attr('href', 'http://www.163.com');
+		var attr = $("a").attr("href");
+		alert(attr); 
+
+		
 	</script>
 </body>
 </html>

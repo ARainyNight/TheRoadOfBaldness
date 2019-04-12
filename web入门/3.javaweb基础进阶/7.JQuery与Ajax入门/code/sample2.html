@@ -69,22 +69,20 @@
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
 	<script  type="text/javascript" >
-		/**
-		 * id选择器使用"#id值"进行选择
-		 * css选择器使用".css类名"进行选择
-		 */
-		$('.myclass').addClass('highlight');
-		// $('#btnSelect').addClass("highlight");
-		// $('#marital_status').addClass("highlight");
-		document.getElementById("btnSelect").onclick =function(){
-			var selector= document.getElementById("txtSelector").value;
-			//jquery的选择器方法
-			//选择器表达式
-			$("*").removeClass('highlight');
-			$(selector).addClass('highlight');
-			// $("#marital_status").addClass('highlight');
-			// $("div").addClass('highlight')
-		}
+		// $('a').css('color','red');
+		$("a").css('color', 'red');
+		$("a").css({
+			'color': 'greed',
+			'font-size': '50px',
+			"font-weight":"bold"
+		});
+
+		$("li").addClass("highlight myclass");
+		$("p").removeClass('myclass');
+		var color= $("a").css("color");
+		alert(color);
+
+
 	</script>
 </body>
 </html>
