@@ -88,3 +88,79 @@
 + `click(function)`:是绑定事件的简写形式
 + 处理方法中提供了event参数包含了事件的相关信息
 + ![](/img/jQuery常用事件.jpg)
+
+----------
+
+## Ajax
+
+### Ajax介绍
+
++ Asynchronous JavaScript And XML(异步的JavaScript和XML)
++ Ajax可以再不刷新页面的前提下，进行页面局部更新
++ Ajax不是新的技术，Ajax并不是W3C的标准
+
+### Ajax的使用流程
+
++ 创建XmlHttpRequest对象
++ 发送Ajax请求
++ 处理服务器响应
+
+#### 创建XMLHttpRequest对象
+
++ XMLHttpRequest用于在后台与服务器交换数据，是Ajax的核心
+
++ XMLHttpRequest并不是W3C的标准，不同浏览器的创建方式不同
+
++ ```javascript
+   //1.创建XMLHttpRequest对象
+              //2.发送AJAX请求
+              //3.处理服务器响应
+              var xmlhttp;
+              if (window.XMLHttpRequest){
+                  //IE7+,Firefox,Chrome,Opera,Safari浏览器执行代码
+                  xmlhttp = new XMLHttpRequest();
+              }else {
+                  //IE6,IE5浏览器执行代码
+                  xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+              }
+              console.log(xmlhttp);
+  ```
+
+#### 发送Ajax请求
+
++ `xmlhttp.open()`用于创建请求
+
++ `xmlhttp.send()`用于发送请求
+
++ ```javas
+   //创建请求
+   xmlhttp.open("GET","http://localhost/test?name=admin",true);  //true是异步，false是同步
+   //发送到服务器
+   xmlhttp.send();
+  ```
+
+#### 处理服务器响应
+
++ `xmlhttp.onreadystatechange()`事件用于监听AJAX的执行过程
+
++ `xmlhttp.readyState`属性说明XMLHttpRequest当前状态
+
++ `xmlhttp.status`属性服务器响应状态码，200:成功  404:未找到....
+
++ ![](/img/处理服务器响应.jpg)
+
++ ```javasc
+  //处理服务器响应
+  xmlhttp.onreadystatechange = function(){
+      //响应已被接收且服务器处理成功时才执行
+      if(xmlhttp.readyState==4&&xmlhttp.status == 200){
+          //获取响应体文本
+          var responseText = xmlhttp.responseText ;
+          //对服务器结果进行处理
+          .....
+      }
+  }
+  ```
+
++ 
+

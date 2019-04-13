@@ -1,0 +1,79 @@
+<!-- 已知如下静态页面，如图1所示，完成如下效果：
+
+1、当加载页面时，弹出提示框：欢迎来到设置颜色的页面
+
+2、当点击名为蓝色的div，下面的div背景色变为蓝色，并设置文字内容为”蓝色背景“，如图2所示；当点击名为绿色的div时，下面的div背景色变为绿色，并将文字设置成“绿色背景”，并设置字体为加粗斜体，如图3所示。
+
+3、当在文本框中输入大写的字母B时，背景颜色变为蓝色，并清空div的内容；当输入大写字母G时，背景颜色变为绿色，并清空div的内容。如图4所示
+
+提示：B的keyCode值是66，G的keyCode值是71 -->
+
+<!DOCTYPE html >
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery练习</title>
+
+<style type="text/css">
+.div1{
+
+	float: left;
+	width: 50px;
+	line-height: 30px;
+	background-color: lightgray;
+	margin-left: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+.div2{
+	width: 300px;
+	height: 300px;
+	border: solid gray 1px;
+	margin-top: 60px;
+	color: red;
+}
+</style>
+
+
+</head>
+<body>
+	<h2>请选择背景颜色</h2>
+	<div>
+	<div id="blue" class="div1">蓝色</div>
+	<div id="green" class="div1">绿色</div>
+	</div>
+	<div class="div2" id="bg">
+	</div>
+	<div>输入颜色首字母： <input type="text" name="color"></div>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		alert("欢迎来到设置颜色的页面");
+		
+		$("#blue").click(function(){
+			$(".div2").css('background-color', 'blue');
+			$(".div2").text("蓝色背景")
+		})
+
+		$("#green").click(function(){
+			$(".div2").css({
+				'background-color': 'green',
+				'font-weight' :  'bold'
+			});
+			$(".div2").text('绿色背景');
+		})
+
+		$("input[name='color']").keypress(function(event){
+			if (event.keyCode == 66) {
+				$(".div2").css("background-color","blue");
+				$(".div2").text("");
+			}
+			if (event.keyCode == 71) {
+				$(".div2").css("background-color","green");
+				$(".div2").text("");
+			}
+		})
+	</script>
+</body>
+</html>

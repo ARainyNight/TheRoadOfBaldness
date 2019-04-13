@@ -1,0 +1,88 @@
+
+<!DOCTYPE html >
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery实验室</title>
+
+<style>
+.myclass {
+	font-style: italic;
+	color: darkblue;
+}
+/* 高亮css类 */
+.highlight {
+	color: red;
+	font-size: 30px;
+	background: lightblue;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="section">
+		<h2>jQuery选择器实验室</h2>
+		<input style="height: 24px" id="txtSelector" />
+		<button id="btnSelect" style="height: 30px">选择</button>
+		<hr />
+		<div>
+			<p id="welcome">欢迎来到选择器实验室</p>
+			<ul>
+				<li>搜索引擎：<a href="http://www.baidu.com">百度</a> <span> <a
+						style="color: darkgreen" href="http://www.so.com">360</a>
+				</span>
+				</li>
+				<li>电子邮箱：<a href="http://mail.163.com">网易邮箱</a> <span> <a
+						style="color: darkgreen" href="http://mail.qq.com">QQ邮箱</a>
+				</span>
+				</li>
+				<li>中国名校：<a href="http://www.tsinghua.edu.cn">清华大学</a> <span>
+						<a style="color: darkgreen" href="https://www.pku.edu.cn/">北京大学</a>
+				</span>
+				</li>
+			</ul>
+
+			<span class="myclass ">我是拥有myclass类的span标签</span>
+
+			<p class="myclass">我是拥有myclass的p标签</p>
+			<form id="info" action="#" method="get">
+				<div>
+					用户名：<input type="text" name="uname" value="admin" /> 密码：<input
+						type="password" name="upsd" value="123456" />
+				</div>
+				<div>
+					婚姻状况： <select id="marital_status">
+						<option value="1">未婚</option>
+						<option value="2">已婚</option>
+						<option value="3">离异</option>
+						<option value="4">丧偶</option>
+					</select>
+				</div>
+				<div class="left clear-left">
+					<input type="submit" value="提交" /> <input type="reset" value="重置" />
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+	<script  type="text/javascript" >
+		$("p.myclass").on("click",function(){
+			//$(this)是指当前事件产生的对象
+			$(this).css("background-color","yellow");
+		});
+
+		$("span.myclass").click(function(){
+			$(this).css("background-color","lightgreen");
+		})
+
+		$("input[name='uname']").keypress(function(event){
+			if (event.keyCode == 32) {
+				$(this).css('color', 'red');
+			}
+		})
+	</script>
+</body>
+</html>
