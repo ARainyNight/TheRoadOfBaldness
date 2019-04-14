@@ -33,27 +33,27 @@
 #### 基本选择器
 
 + 基本选择器是jQuery最基础也是最常用的选择器表达式
-+ ![](.\img\基本选择器.png)
++ ![.\img\基本选择器.png](.\img\基本选择器.png)
 
 #### 层叠选择器
 
 + 层叠选择器是根据元素的位置关系来获取元素的选择器表达式
-+ ![](.\img\层叠选择器.png)
++ ![.\img\层叠选择器.png](.\img\层叠选择器.png)
 
 #### 属性选择器
 
 + 属性选择器就是根据元素的属性值来选择元素的选择器表达式
-+ ![](.\img\属性选择器.jpg)
++ ![.\img\属性选择器.jpg](.\img\属性选择器.jpg)
 
 #### 位置选择器
 
 + 位置选择器是指通过位置获取指定的元素，例如“获取第3个元素”
-+ ![](.\img\位置选择器.jpg)
++ ![.\img\位置选择器.jpg](.\img\位置选择器.jpg)
 
 #### 表单选择器
 
 + 表单选择器是获取表单元素的简化形式，例如：获取所有文本框
-+ ![](./img/表单选择器.jpg)
++ ![./img/表单选择器.jpg](./img/表单选择器.jpg)
 
 - 
 
@@ -87,7 +87,7 @@
 + `on("click",function)`：为选中的页面元素绑定单击事件
 + `click(function)`:是绑定事件的简写形式
 + 处理方法中提供了event参数包含了事件的相关信息
-+ ![](/img/jQuery常用事件.jpg)
++ ![/img/jQuery常用事件.jpg](/img/jQuery常用事件.jpg)
 
 ----------
 
@@ -124,6 +124,7 @@
                   xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
               }
               console.log(xmlhttp);
+   ```
   ```
 
 #### 发送Ajax请求
@@ -147,7 +148,7 @@
 
 + `xmlhttp.status`属性服务器响应状态码，200:成功  404:未找到....
 
-+ ![](/img/处理服务器响应.jpg)
++ ![/img/处理服务器响应.jpg](/img/处理服务器响应.jpg)
 
 + ```javasc
   //处理服务器响应
@@ -162,5 +163,10 @@
   }
   ```
 
-+ 
+
+### jQuery对Ajax的支持
+
++ jQuery对Ajax进行封装，提供了`$.ajax()`方法
++ 语法:`$.ajax(options)`
++ ![/img/jQuery对Ajax的支持.jpg](/img/jQuery对Ajax的支持.jpg)
 

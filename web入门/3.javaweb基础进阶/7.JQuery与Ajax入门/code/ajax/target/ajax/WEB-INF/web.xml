@@ -14,4 +14,41 @@
         <url-pattern>/content</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>NewsListServlet</servlet-name>
+        <servlet-class>com.nuc.ajax.NewsListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewsListServlet</servlet-name>
+        <url-pattern>/news</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>department</servlet-name>
+        <servlet-class>com.nuc.oa.DepartmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>department</servlet-name>
+        <url-pattern>/department</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>po</servlet-name>
+        <servlet-class>com.nuc.oa.PoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>po</servlet-name>
+        <url-pattern>/po</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>staff</servlet-name>
+        <servlet-class>com.nuc.oa.StaffServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>staff</servlet-name>
+        <url-pattern>/staff</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>
