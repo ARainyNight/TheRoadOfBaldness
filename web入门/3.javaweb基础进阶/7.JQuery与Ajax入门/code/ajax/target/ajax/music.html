@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div>
+    <button id="liuxing" type="button">流行歌曲</button>
+    <button id="jingdian" type="button">经典歌曲</button>
+    <button id="yaogun" type="button">摇滚歌曲</button>
+</div>
+<div id="content"></div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    var flag = "";
+    $("#liuxing").on("click", function () {
+        flag = "liuxing";
+        AJAX(flag);
+    });
+    $("#jingdian").on("click", function () {
+        flag = "jingdian";
+        AJAX(flag);
+
+    });
+    $("#yaogun").on("click", function () {
+        flag = "yaogun";
+        AJAX(flag);
+    });
+
+    function AJAX(flag) {
+        $("#content").html("");
+        $.ajax({
+            url: "http://localhost:8080/music",
+            type: "get",
+            data: {
+                t: flag
+            },
+            dataType: "json",
+            success: function (json) {
+                for (var i = 0; i < json.length; i++) {
+                    $("#content").append("<h1>" + json[i].name + "</h1><hr>")
+                }
+            },
+            error: function (xmlhttp, errorText) {
+                console.log(xmlhttp);
+                console.log(errorText);
+                if (xmlhttp.status == "405") {
+                    alert("无效的请求方式");
+                } else if (xmlhttp.status == "404") {
+                    alert("未找到URL资源");
+                } else if (xmlhttp.status == "500") {
+                    alert("服务器内部错误，请联系管理员");
+                } else {
+                    alert("发生异常，请联系管理员");
+                }
+            }
+        })
+    }
+</script>
+</body>
+</html>

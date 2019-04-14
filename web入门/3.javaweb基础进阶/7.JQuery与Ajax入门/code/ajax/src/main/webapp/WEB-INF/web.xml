@@ -50,5 +50,24 @@
         <url-pattern>/staff</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>music</servlet-name>
+        <servlet-class>com.nuc.work.MusicServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>music</servlet-name>
+        <url-pattern>/music</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>channel</servlet-name>
+        <servlet-class>com.nuc.channel.ChannelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>channel</servlet-name>
+        <url-pattern>/channel</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

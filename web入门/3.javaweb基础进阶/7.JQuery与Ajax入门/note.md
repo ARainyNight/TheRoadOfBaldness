@@ -167,6 +167,126 @@
 ### jQuery对Ajax的支持
 
 + jQuery对Ajax进行封装，提供了`$.ajax()`方法
+
 + 语法:`$.ajax(options)`
+
 + ![/img/jQuery对Ajax的支持.jpg](/img/jQuery对Ajax的支持.jpg)
 
++ 服务端代码
+
++ ```java
+  public class MusicServlet extends HttpServlet {
+  
+      @Override
+      protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+          String t = req.getParameter("t");
+          List<Music> list = new ArrayList<>();
+  
+          if (t != null && t.equals("liuxing")) {
+              list.add(new Music("稻香"));
+              list.add(new Music("晴天"));
+              list.add(new Music("告白气球"));
+          } else if (t != null && t.equals("jingdian")) {
+              list.add(new Music("千千厥歌"));
+              list.add(new Music("傻女"));
+              list.add(new Music("七友"));
+          } else if (t != null && t.equals("yaogun")) {
+              list.add(new Music("一块红布"));
+              list.add(new Music("假行僧"));
+              list.add(new Music("新长征路上的摇滚"));
+          }else {
+              resp.setContentType("text/html;charset=utf-8");
+              resp.getWriter().println("无数据");
+          }
+  
+          String json = JSON.toJSONString(list);
+          resp.setContentType("text/html;charset=utf-8");
+          resp.getWriter().println(json);
+      }
+  }
+  
+  ```
+
++ 配置Servlet
+
++ ```xml
+   <servlet>
+          <servlet-name>music</servlet-name>
+          <servlet-class>com.nuc.work.MusicServlet</servlet-class>
+      </servlet>
+      <servlet-mapping>
+          <servlet-name>music</servlet-name>
+          <url-pattern>/music</url-pattern>
+      </servlet-mapping>
+  ```
+
++ 前端代码
+
++ ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+  
+  </head>
+  <body>
+  <div>
+      <button id="liuxing" type="button">流行歌曲</button>
+      <button id="jingdian" type="button">经典歌曲</button>
+      <button id="yaogun" type="button">摇滚歌曲</button>
+  </div>
+  <div id="content"></div>
+  
+  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+      var flag = "";
+      $("#liuxing").on("click", function () {
+          flag = "liuxing";
+          AJAX(flag);
+      });
+      $("#jingdian").on("click", function () {
+          flag = "jingdian";
+          AJAX(flag);
+  
+      });
+      $("#yaogun").on("click", function () {
+          flag = "yaogun";
+          AJAX(flag);
+      });
+  
+      function AJAX(flag) {
+          $("#content").html("");
+          $.ajax({
+              url: "http://localhost:8080/music",
+              type: "get",
+              data: {
+                  t: flag
+              },
+              dataType: "json",
+              success: function (json) {
+                  for (var i = 0; i < json.length; i++) {
+                      $("#content").append("<h1>" + json[i].name + "</h1><hr>")
+                  }
+              },
+              error: function (xmlhttp, errorText) {
+                  console.log(xmlhttp);
+                  console.log(errorText);
+                  if (xmlhttp.status == "405") {
+                      alert("无效的请求方式");
+                  } else if (xmlhttp.status == "404") {
+                      alert("未找到URL资源");
+                  } else if (xmlhttp.status == "500") {
+                      alert("服务器内部错误，请联系管理员");
+                  } else {
+                      alert("发生异常，请联系管理员");
+                  }
+              }
+          })
+      }
+  </script>
+  </body>
+  </html>
+  ```
+
+  

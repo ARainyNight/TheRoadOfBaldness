@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                "url": "http://localhost:8080/news",
+                "type": "get",
+                "data":{
+                    "t":"pypl",
+                    "user":"dddd",
+                    "password":"123456"
+                },
+                // "data": "t=pypl&user=dddd&password=123456",
+                dataType: "json",
+                "success": function (json) {
+                    console.log(json);
+                    for (var i = 0; i < json.length; i++) {
+                        $("#container").append("<h1>" + json[i].title + "</h1>")
+                    }
+                },
+                "error": function (xmlhttp, errorText) {
+                    console.log(xmlhttp);
+                    console.log(errorText);
+                    if (xmlhttp.status == "405") {
+                        alert("无效的请求方式");
+                    } else if (xmlhttp.status == "404") {
+                        alert("未找到URL资源");
+                    } else if (xmlhttp.status == "500") {
+                        alert("服务器内部错误，请联系管理员");
+                    } else {
+                        alert("发生异常，请联系管理员");
+                    }
+                }
+
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="container"></div>
+</body>
+</html>
