@@ -218,6 +218,7 @@
           <servlet-name>music</servlet-name>
           <url-pattern>/music</url-pattern>
       </servlet-mapping>
+   ```
   ```
 
 + 前端代码
@@ -258,18 +259,18 @@
       function AJAX(flag) {
           $("#content").html("");
           $.ajax({
-              url: "http://localhost:8080/music",
-              type: "get",
-              data: {
-                  t: flag
+              "url": "http://localhost:8080/music",
+              "type": "get",
+              "data": {
+                  "t": flag
               },
-              dataType: "json",
-              success: function (json) {
+              "dataType": "json",
+              "success": function (json) {
                   for (var i = 0; i < json.length; i++) {
                       $("#content").append("<h1>" + json[i].name + "</h1><hr>")
                   }
               },
-              error: function (xmlhttp, errorText) {
+              "error": function (xmlhttp, errorText) {
                   console.log(xmlhttp);
                   console.log(errorText);
                   if (xmlhttp.status == "405") {
